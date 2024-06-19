@@ -27,13 +27,12 @@ class ViewController: EditorViewController,
     private var isPreLoaded = false
     
     let storage = Storage.shared()
-    var timer = Timer()
-    var sidebarTimer = Timer()
     
-    let searchQueue = OperationQueue()
-    
-    var tagsScannerQueue = [Note]()
-    
+    private var sidebarTimer = Timer()
+    private var selectRowTimer = Timer()
+
+    private let searchQueue = OperationQueue()
+
     public static var gitQueue = OperationQueue()
     public static var gitQueueBusy: Bool = false
     public static var gitQueueOperationDate: Date?
@@ -42,7 +41,9 @@ class ViewController: EditorViewController,
 
     /* Git */
     private var updateViews = [Note]()
-    
+
+    var tagsScannerQueue = [Note]()
+
     override var representedObject: Any? {
         didSet { }  // Update the view, if already loaded.
     }
@@ -138,9 +139,16 @@ class ViewController: EditorViewController,
     // MARK: - Overrides
     
     override func viewDidLoad() {
-        newNoteButton.image =
-            NSImage(imageLiteralResourceName: "new_note_button")
-                .resize(to: CGSize(width: 30, height: 30))
+        
+        if #available(macOS 12.0, *) {
+            let image = NSImage(systemSymbolName: "square.and.pencil", accessibilityDescription: nil)
+            var config = NSImage.SymbolConfiguration(textStyle: .body, scale: .large)
+            config = config.applying(.init(paletteColors: [.systemTeal, .systemGray]))
+
+            newNoteButton.image = image?.withSymbolConfiguration(config)
+        } else {
+            newNoteButton.image = NSImage(imageLiteralResourceName: "new_note_button").resize(to: CGSize(width: 20, height: 20))
+        }
 
         storage.restoreUploadPaths()
         storage.restoreAPIIds()
@@ -528,7 +536,7 @@ class ViewController: EditorViewController,
     // Ask project password before move to encrypted
     public func moveReq(notes: [Note], project: Project, completion: @escaping (Bool) -> ()) {
         for note in notes {
-            if note.isEncrypted() {
+            if note.isEncrypted() && project.isEncrypted {
                 let alert = NSAlert()
                 alert.alertStyle = .critical
                 alert.informativeText = NSLocalizedString("You cannot move an already encrypted note to an encrypted directory. You must first decrypt the note and repeat the steps.", comment: "")
@@ -636,6 +644,14 @@ class ViewController: EditorViewController,
             return true
         }
 
+        if event.modifierFlags.contains(.shift)
+            && event.modifierFlags.contains(.option)
+            && event.keyCode == kVK_ANSI_N {
+
+            sidebarOutlineView.createFolder(NSMenuItem())
+            return false
+        }
+
         if event.keyCode == kVK_Delete && event.modifierFlags.contains(.command) && editor.hasFocus() {
             editor.deleteToBeginningOfLine(nil)
             return false
@@ -695,27 +711,7 @@ class ViewController: EditorViewController,
                 return false
             }
         }
-        
-        // cmd + + to increase font size
-        if event.keyCode == kVK_ANSI_Equal {
-            if event.modifierFlags.contains(.command) {
-                UserDefaultsManagement.codeFont = NSFont(descriptor: UserDefaultsManagement.codeFont.fontDescriptor, size: UserDefaultsManagement.codeFont.pointSize + 1)!
-                UserDefaultsManagement.noteFont = NSFont(descriptor: UserDefaultsManagement.noteFont.fontDescriptor, size: UserDefaultsManagement.noteFont.pointSize + 1)!
-                reloadFonts()
-                return false
-            }
-        }
-
-        // cmd + - to decrease font size
-        if event.keyCode == kVK_ANSI_Minus {
-            if event.modifierFlags.contains(.command) {
-                UserDefaultsManagement.codeFont = NSFont(descriptor: UserDefaultsManagement.codeFont.fontDescriptor, size: UserDefaultsManagement.codeFont.pointSize - 1)!
-                UserDefaultsManagement.noteFont = NSFont(descriptor: UserDefaultsManagement.noteFont.fontDescriptor, size: UserDefaultsManagement.noteFont.pointSize - 1)!
-                reloadFonts()
-                return false
-            }
-        }
-        
+                
         // Focus search bar on ESC
         if (
             (
@@ -962,11 +958,11 @@ class ViewController: EditorViewController,
         
         guard let vc = ViewController.shared() else { return }
         
-        // Dusable notes creation if folder encrypted
+        // Disable notes creation if folder encrypted
         if let project = vc.sidebarOutlineView.getSelectedProject(), project.isEncrypted, project.isLocked() {
             let menuItem = NSMenuItem()
             menuItem.identifier = NSUserInterfaceItemIdentifier("menu.newNote")
-            vc.sidebarOutlineView.toggleFolderLock(menuItem)
+            vc.toggleFolderLock(menuItem)
             return
         }
         
@@ -1194,14 +1190,6 @@ class ViewController: EditorViewController,
         }
     }
     
-    
-    public func blockFSUpdates() {
-        timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(enableFSUpdates), userInfo: nil, repeats: false)
-
-        UserDataService.instance.fsUpdatesDisabled = true
-    }
-
     public func reSort(note: Note) {
         if !updateViews.contains(note) {
             updateViews.append(note)
@@ -1243,10 +1231,6 @@ class ViewController: EditorViewController,
         }
     }
     
-    @objc func enableFSUpdates() {
-        UserDataService.instance.fsUpdatesDisabled = false
-    }
-
     @objc private func updateTableViews() {
         let editors = AppDelegate.getEditTextViews()
         
@@ -1298,8 +1282,6 @@ class ViewController: EditorViewController,
         
         return nil
     }
-
-    private var selectRowTimer = Timer()
 
     func updateTable(search: Bool = false, searchText: String? = nil, sidebarItem: SidebarItem? = nil, projects: [Project]? = nil, tags: [String]? = nil, completion: @escaping () -> Void = {}) {
 
@@ -1763,23 +1745,25 @@ class ViewController: EditorViewController,
 
         guard notes.count == 0x01 else { return }
 
-        DispatchQueue.main.async {
+        DispatchQueue.global().async {
             let commits = note.getCommits()
 
-            guard commits.count > 0 else {
-                historyMenu?.isEnabled = false
-                return
+            DispatchQueue.main.async {
+                guard commits.count > 0 else {
+                    historyMenu?.isEnabled = false
+                    return
+                }
+                
+                for commit in commits {
+                    let menuItem = NSMenuItem()
+                    menuItem.title = commit.getDate()
+                    menuItem.representedObject = commit
+                    menuItem.action = #selector(vc.checkoutRevision(_:))
+                    historyMenu?.submenu?.addItem(menuItem)
+                }
+                
+                historyMenu?.isEnabled = true
             }
-
-            for commit in commits {
-                let menuItem = NSMenuItem()
-                menuItem.title = commit.getDate()
-                menuItem.representedObject = commit
-                menuItem.action = #selector(vc.checkoutRevision(_:))
-                historyMenu?.submenu?.addItem(menuItem)
-            }
-
-            historyMenu?.isEnabled = true
         }
     }
 
@@ -1822,7 +1806,6 @@ class ViewController: EditorViewController,
         if let keys = notification.userInfo?[NSUbiquitousKeyValueStoreChangedKeysKey] as? [String] {
             for key in keys {
                 if key == "co.fluder.fsnotes.pins.shared" {
-                    
                     let changedNotes = storage.getUpdatedPins()
                     
                     DispatchQueue.main.async {
@@ -1991,7 +1974,6 @@ class ViewController: EditorViewController,
 
     override func restoreUserActivityState(_ userActivity: NSUserActivity) {
         guard let name = userActivity.userInfo?["note-file-name"] as? String,
-            let position = userActivity.userInfo?["position"] as? String,
             let state = userActivity.userInfo?["state"] as? String,
             let note = Storage.shared().getBy(name: name)
         else { return }
@@ -1999,14 +1981,6 @@ class ViewController: EditorViewController,
         vcEditor?.changePreviewState(state == "preview")
         
         note.previewState = state == "preview"
-
-        if let position = Int(position),
-            position > -1,
-            let textStorage = editor.textStorage,
-            textStorage.length >= position {
-            
-            editor.restoreRange = NSRange(location: position, length: 0)
-        }
 
         notesTableView.selectRowAndSidebarItem(note: note)
     }
@@ -2043,13 +2017,13 @@ class ViewController: EditorViewController,
             guard let url = item["url"] as? URL,
                   let frameData = item["frame"] as? Data,
                   let main = item["main"] as? Bool,
-                  let key = item["key"] as? Bool,
+                  let isKeyWindow = item["key"] as? Bool,
                   let preview = item["preview"] as? Bool,
                   let note = self.storage.getBy(url: url)
             else { continue }
             
             if main {
-                if key {
+                if isKeyWindow {
                     mainKey = true
                 }
                 
@@ -2061,6 +2035,8 @@ class ViewController: EditorViewController,
                     self.notesTableView.saveNavigationHistory(note: note)
                     self.notesTableView.selectRow(i)
                     self.notesTableView.scrollRowToVisible(i)
+
+                    self.editor.window?.makeFirstResponder(self.editor)
                 }
             } else {
                 guard let frame = NSKeyedUnarchiver.unarchiveObject(with: frameData) as? NSRect else { continue }

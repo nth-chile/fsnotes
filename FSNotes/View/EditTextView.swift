@@ -10,6 +10,7 @@ import Cocoa
 import Highlightr
 import Carbon.HIToolbox
 import FSNotesCore_macOS
+import SwiftSoup
 
 class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelegate {
     
@@ -26,7 +27,6 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
     public var timer: Timer?
     public var tagsTimer: Timer?
     public var markdownView: MPreviewView?
-    public var restoreRange: NSRange? = nil
     public var isLastEdited: Bool = false
     
     @IBOutlet weak var previewMathJax: NSMenuItem!
@@ -343,7 +343,7 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
         }
         
         super.mouseDown(with: event)
-        saveCursorPosition()
+        saveSelectedRange()
         
         if editorViewController?.vcEditor?.isPreviewEnabled() == false {
             self.isEditable = true
@@ -988,7 +988,8 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
         unregisterDraggedTypes()
         registerForDraggedTypes([
             NSPasteboard.PasteboardType(kUTTypeFileURL as String),
-            NSPasteboard.noteType
+            NSPasteboard.noteType,
+            .URL
         ])
 
         if let label = editorViewController?.vcNonSelectedLabel {
@@ -1051,16 +1052,10 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
             isHighlighted = true
         }
 
-        restoreCursorPosition()
+        loadSelectedRange()
 
         if UserDefaultsManagement.appearanceType == AppearanceType.Custom {
             backgroundColor = UserDefaultsManagement.bgColor
-        }
-
-        if let restoreRange = self.restoreRange {
-            NSApp.mainWindow?.makeFirstResponder(self)
-            setSelectedRange(restoreRange)
-            self.restoreRange = nil
         }
     }
 
@@ -1385,7 +1380,7 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
 
         if note.type == .RichText {
             super.keyDown(with: event)
-            saveCursorPosition()
+            saveSelectedRange()
             
             let range = getParagraphRange()
             let processor = NotesTextProcessor(storage: textStorage, range: range)
@@ -1399,7 +1394,7 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
         }
         
         super.keyDown(with: event)
-        saveCursorPosition()
+        saveSelectedRange()
     }
 
     override func shouldChangeText(in affectedCharRange: NSRange, replacementString: String?) -> Bool {
@@ -1548,16 +1543,12 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
                 outline.addTags(added)
             }
 
-            if UserDefaultsManagement.naming == .autoRename {
-                let title = note.title.trunc(length: 64)
+            if let title = note.getAutoRenameTitle() {
+                note.rename(to: title)
 
-                if note.fileName != title && title.count > 0 && !note.isEncrypted() {
-                    note.rename(to: title)
-
-                    if let editorViewController = getEVC() {
-                        editorViewController.vcTitleLabel?.updateNotesTableView()
-                        editorViewController.updateTitle(note: note)
-                    }
+                if let editorViewController = getEVC() {
+                    editorViewController.vcTitleLabel?.updateNotesTableView()
+                    editorViewController.updateTitle(note: note)
                 }
             }
 
@@ -1565,28 +1556,19 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
         }
     }
 
-    func saveCursorPosition() {
-        guard let note = self.note, let range = selectedRanges[0] as? NSRange, UserDefaultsManagement.restoreCursorPosition else {
+    func saveSelectedRange() {
+        guard let note = self.note, let range = selectedRanges[0] as? NSRange else {
             return
         }
 
-        viewDelegate?.blockFSUpdates()
-        
-        var length = range.lowerBound
-        let data = Data(bytes: &length, count: MemoryLayout.size(ofValue: length))
-        try? note.url.setExtendedAttribute(data: data, forName: "co.fluder.fsnotes.cursor")
+        note.setSelectedRange(range: range) 
     }
     
-    func restoreCursorPosition() {
+    func loadSelectedRange() {
         guard let storage = textStorage else { return }
 
-        guard UserDefaultsManagement.restoreCursorPosition else {
-            setSelectedRange(NSMakeRange(0, 0))
-            return
-        }
-
-        if let position = self.note?.getCursorPosition(), position <= storage.length {
-            setSelectedRange(NSMakeRange(position, 0))
+        if let range = self.note?.getSelectedRange(), range.upperBound <= storage.length {
+            setSelectedRange(range)
             scrollToCursor()
         }
     }
@@ -1596,6 +1578,7 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
 
         let string = storage.attributedSubstring(from: NSRange(0..<storage.length))
 
+        note.modifiedLocalAt = Date()
         note.content =
             NSMutableAttributedString(attributedString: string)
                 .unLoadImages()
@@ -1636,10 +1619,9 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
         let board = sender.draggingPasteboard
         let range = selectedRange
-        var data: Data
-
         let dropPoint = convert(sender.draggingLocation, from: nil)
         let caretLocation = characterIndexForInsertion(at: dropPoint)
+        var replacementRange = NSRange(location: caretLocation, length: 0)
 
         guard let note = self.note, let storage = textStorage else { return false }
 
@@ -1668,7 +1650,8 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
             return true
         }
 
-        if let data = board.data(forType: NSPasteboard.PasteboardType.init(rawValue: "attributedText")), let attributedText = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSMutableAttributedString {
+        if let data = board.data(forType: NSPasteboard.PasteboardType.init(rawValue: "attributedText")), 
+            let attributedText = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSMutableAttributedString {
             let dropPoint = convert(sender.draggingLocation, from: nil)
             let caretLocation = characterIndexForInsertion(at: dropPoint)
             
@@ -1684,7 +1667,7 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
             guard let imageUrl = note.getImageUrl(imageName: path) else { return false }
 
             let locationDiff = position > caretLocation ? caretLocation : caretLocation - 1
-            let attachment = NoteAttachment(editor: self, title: title, path: path, url: imageUrl, invalidateRange: NSRange(location: locationDiff, length: 1))
+            let attachment = NoteAttachment(editor: self, title: title, path: path, url: imageUrl)
 
             guard let attachmentText = attachment.getAttributedString() else { return false }
             guard locationDiff < storage.length else { return false }
@@ -1703,7 +1686,6 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
            let url = urls.first,
            let draggableNote = Storage.shared().getBy(url: url) {
 
-            let replacementRange = NSRange(location: caretLocation, length: 0)
             let title = "[[" + draggableNote.title + "]]"
             NSApp.mainWindow?.makeFirstResponder(self)
 
@@ -1719,56 +1701,93 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
         
         if let urls = board.readObjects(forClasses: [NSURL.self], options: nil) as? [URL],
             urls.count > 0 {
-            var offset = 0
 
             safeSave(note: note)
 
-            for url in urls {
-                do {
-                    data = try Data(contentsOf: url)
-                } catch {
-                    return false
-                }
-
-                guard let filePath = ImagesProcessor.writeFile(data: data, url: url, note: note) else { return false }
-
-                let insertRange = NSRange(location: caretLocation + offset, length: 0)
-
-                if UserDefaultsManagement.liveImagesPreview {
-                    let cleanPath = filePath.removingPercentEncoding ?? filePath
-                    guard let url = note.getImageUrl(imageName: cleanPath) else { return false }
-
-                    let invalidateRange = NSRange(location: caretLocation + offset, length: 1)
-                    let attachment = NoteAttachment(editor: self, title: "", path: cleanPath, url: url, invalidateRange: invalidateRange, note: note)
-
-                    if let string = attachment.getAttributedString() {
-                        textStorageProcessor?.shouldForceRescan = true
-
-                        setSelectedRange(insertRange)
-                        insertText(string, replacementRange: insertRange)
-
-                        offset += 3
+            for (index, url) in urls.enumerated() {
+                fetchDataFromURL(url: url) { (data, error) in
+                    if let error = error {
+                        print("Error fetching data: \(error.localizedDescription)")
+                        return
                     }
-                } else {
-                    setSelectedRange(insertRange)
-                    insertText("![](\(filePath))", replacementRange: insertRange)
+
+                    guard let data = data else { return }
+
+                    DispatchQueue.main.async {
+                        if url.absoluteString.startsWith(string: "https://") || url.absoluteString.startsWith(string: "http://") {
+                            let title = self.getHTMLTitle(from: data) ?? ""
+                            self.insertText("[\(title)](\(url.absoluteString))", replacementRange: replacementRange)
+                            return
+                        }
+
+                        guard let filePath = ImagesProcessor.writeFile(data: data, url: url, note: note) else { return }
+
+                        if UserDefaultsManagement.liveImagesPreview {
+                            let cleanPath = filePath.removingPercentEncoding ?? filePath
+                            guard let url = note.getImageUrl(imageName: cleanPath) else { return }
+                            let attachment = NoteAttachment(editor: self, title: "", path: cleanPath, url: url, note: note)
+
+                            let newLine = urls.count > 0 && index != urls.count - 1
+                            if let string = attachment.getAttributedString(newLine: newLine) {
+                                self.textStorageProcessor?.shouldForceRescan = true
+
+                                self.insertText(string, replacementRange: replacementRange)
+                                replacementRange = NSRange(location: replacementRange.location + string.length, length: 0)
+                                self.setSelectedRange(replacementRange)
+                            }
+                        } else {
+                            let string = "![](\(filePath))\n"
+                            self.insertText(string, replacementRange: replacementRange)
+                            replacementRange = NSRange(location: replacementRange.location + string.count, length: 0)
+                            self.setSelectedRange(replacementRange)
+                        }
+
+                        if let storage = self.textStorage {
+                            NotesTextProcessor.highlightMarkdown(attributedString: storage, note: note)
+                            self.saveTextStorageContent(to: note)
+                            note.save()
+                        }
+
+                        self.viewDelegate?.notesTableView.reloadRow(note: note)
+                    }
                 }
             }
-
-            if let storage = textStorage {
-                NotesTextProcessor.highlightMarkdown(attributedString: storage, note: note)
-                saveTextStorageContent(to: note)
-                note.save()
-            }
-
-            self.viewDelegate?.notesTableView.reloadRow(note: note)
 
             return true
         }
 
         return false
     }
-    
+
+    func fetchDataFromURL(url: URL, completion: @escaping (Data?, Error?) -> Void) {
+        let session = URLSession.shared
+
+        let task = session.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+
+            completion(data, nil)
+        }
+
+        task.resume()
+    }
+
+    func getHTMLTitle(from data: Data) -> String? {
+        do {
+            let htmlString = String(data: data, encoding: .utf8)
+            let doc = try SwiftSoup.parse(htmlString!)
+            let titleElement = try doc.select("title").first()
+            let title = try titleElement?.text()
+
+            return title
+        } catch {
+            print("Error parsing HTML: \(error.localizedDescription)")
+            return nil
+        }
+    }
+
     public func safeSave(note: Note) {
         guard note.container != .encryptedTextPack else { return }
         
@@ -2217,8 +2236,7 @@ class EditTextView: NSTextView, NSTextFinderClient, NSSharingServicePickerDelega
             guard let path = path.removingPercentEncoding else { return }
             
             if let imageUrl = note.getImageUrl(imageName: path) {
-                let range = NSRange(location: selectedRange.location, length: 1)
-                let attachment = NoteAttachment(editor: self, title: "", path: path, url: imageUrl, invalidateRange: range, note: note)
+                let attachment = NoteAttachment(editor: self, title: "", path: path, url: imageUrl, note: note)
 
                 if let attributedString = attachment.getAttributedString() {
                     let newLineImage = NSMutableAttributedString(attributedString: attributedString)

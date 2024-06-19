@@ -17,7 +17,6 @@ import AVKit
 
 class NoteAttachment {
     public var title: String
-    public var invalidateRange: NSRange?
 
     private var path: String
     public var url: URL
@@ -27,18 +26,17 @@ class NoteAttachment {
 
     public var editor: EditTextView?
 
-    init(editor: EditTextView, title: String, path: String, url: URL, invalidateRange: NSRange? = nil, note: Note? = nil) {
+    init(editor: EditTextView, title: String, path: String, url: URL, note: Note? = nil) {
         self.editor = editor
         self.title = title
         self.url = url
         self.path = path
-        self.invalidateRange = invalidateRange
         self.note = note
     }
 
     weak var weakTimer: Timer?
 
-    public func getAttributedString() -> NSMutableAttributedString? {
+    public func getAttributedString(newLine: Bool = false) -> NSMutableAttributedString? {
         let imageKey = NSAttributedString.Key(rawValue: "co.fluder.fsnotes.image.url")
         let pathKey = NSAttributedString.Key(rawValue: "co.fluder.fsnotes.image.path")
         let titleKey = NSAttributedString.Key(rawValue: "co.fluder.fsnotes.image.title")
@@ -73,6 +71,10 @@ class NoteAttachment {
         #endif
 
         mutableAttributedString.addAttributes(attributes, range: NSRange(0..<1))
+
+        if newLine {
+            mutableAttributedString.append(NSAttributedString(string: "\n"))
+        }
 
         return mutableAttributedString
     }
@@ -127,5 +129,26 @@ class NoteAttachment {
                 try? data.write(to: url)
             }
         }
+    }
+
+    public func getImageText() -> String {
+        let fileSize = self.url.fileSize
+        var sizeTitle = String()
+
+        if fileSize > 10000 {
+            sizeTitle = String(format: "%.2f", Double(fileSize) / 1000000) + " MB"
+        } else {
+            sizeTitle = String(fileSize) + " bytes"
+        }
+
+        let text = " \(self.url.lastPathComponent) – \(sizeTitle) 📎 "
+        return text
+    }
+
+    public func getImageWidth(text: String) -> Double {
+        let font = getAttachmentFont()
+        let labelWidth = (text as NSString).size(withAttributes: [.font: font]).width
+
+        return labelWidth
     }
 }

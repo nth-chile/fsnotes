@@ -34,6 +34,16 @@ public class NotesTextProcessor {
     typealias Color = UIColor
     typealias Image = UIImage
     typealias Font = UIFont
+
+    public static var fontColor: UIColor {
+        get {
+            return UIColor { (traits) -> UIColor in
+                return traits.userInterfaceStyle == .dark ?
+                    UIColor.white :
+                    UIColor.black
+            }
+        }
+    }
 #endif
     // MARK: Syntax highlight customisation
     
@@ -628,9 +638,10 @@ public class NotesTextProcessor {
         
         FSParser.yamlBlockRegex.matches(string, range: NSRange(location: 0, length: attributedString.length)) { (result) -> Void in
             guard let range = result?.range(at: 1) else { return }
-            
+            attributedString.addAttribute(.foregroundColor, value: NotesTextProcessor.fontColor, range: range)
+
             if range.location == 0 {
-                let listOpeningRegex = MarklightRegex(pattern: "((.+):)", options: [.allowCommentsAndWhitespace])
+                let listOpeningRegex = MarklightRegex(pattern: "([a-zA-Z_]+):", options: [.allowCommentsAndWhitespace])
                 listOpeningRegex.matches(string, range: range) { (result) -> Void in
                     guard let range = result?.range(at: 0) else { return }
                     attributedString.addAttribute(.foregroundColor, value: NotesTextProcessor.yamlOpenerColor, range: range)

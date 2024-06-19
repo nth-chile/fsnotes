@@ -135,7 +135,11 @@ public extension String {
     }
 
     func trunc(length: Int) -> String {
-        return (self.count > length) ? String(self.prefix(length)) : self
+        let result = self
+            .replacingOccurrences(of: ":", with: "")
+            .replacingOccurrences(of: "/", with: "")
+
+        return (result.count > length) ? String(result.prefix(length)) : result
     }
 
     func startsWith(string: String) -> Bool {
@@ -206,6 +210,18 @@ public extension String {
 
     func isHexColor() -> Bool {
         return self.count == 6 && self.allSatisfy({ $0.isHexDigit })
+    }
+
+    func swiftRange(from nsRange: NSRange) -> Range<String.Index>? {
+        guard let start = index(at: nsRange.location),
+              let end = index(at: nsRange.location + nsRange.length) else {
+            return nil
+        }
+        return start..<end
+    }
+
+    private func index(at location: Int) -> String.Index? {
+        return self.index(startIndex, offsetBy: location, limitedBy: endIndex)
     }
 }
 

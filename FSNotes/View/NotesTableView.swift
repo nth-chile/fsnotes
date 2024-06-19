@@ -63,39 +63,13 @@ class NotesTableView: NSTableView, NSTableViewDataSource,
         return true
     }
 
-    override func becomeFirstResponder() -> Bool {
-        let result = super.becomeFirstResponder()
-
-        DispatchQueue.main.async {
-            let selectedRowIndexes = self.selectedRowIndexes
-            for i in selectedRowIndexes {
-                self.renderPinFor(row: i)
-            }
-        }
-
-        return result
-    }
-
-    override func resignFirstResponder() -> Bool {
-        let result = super.resignFirstResponder()
-
-        DispatchQueue.main.async {
-            let selectedRowIndexes = self.selectedRowIndexes
-            for i in selectedRowIndexes {
-                self.renderPinFor(row: i)
-            }
-        }
-
-        return result
-    }
-
     override func mouseDown(with event: NSEvent) {
         guard let vc = self.window?.contentViewController as? ViewController else { return }
         
         if let selectedProject = vc.sidebarOutlineView.getSelectedProject(),
             selectedProject.isLocked()
         {
-            vc.sidebarOutlineView.toggleFolderLock(NSMenuItem())
+            vc.toggleFolderLock(NSMenuItem())
             return
         }
         
@@ -147,62 +121,41 @@ class NotesTableView: NSTableView, NSTableViewDataSource,
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         let height = CGFloat(21 + UserDefaultsManagement.cellSpacing)
 
-        if !UserDefaultsManagement.horizontalOrientation && !UserDefaultsManagement.hidePreviewImages {
-            if row < noteList.count {
-                let note = noteList[row]
-                if !note.isLoaded && !note.isLoadedFromCache {
-                    note.load()
+        guard row < noteList.count else { return height }
+
+        let note = noteList[row]
+        if !note.isLoaded && !note.isLoadedFromCache {
+            note.load()
+        }
+
+        if !UserDefaultsManagement.horizontalOrientation
+            && !UserDefaultsManagement.hidePreviewImages,
+            let urls = note.imageUrl,
+            urls.count > 0{
+
+            if note.preview.count == 0 {
+                if note.getTitle() != nil {
+                    // Title + image
+                    return 79 + 17
                 }
-                
-                if let urls = note.imageUrl, urls.count > 0 {
-                    let previewCharsQty = note.preview.count
 
-                    if (previewCharsQty == 0) {
-                        if note.getTitle() != nil {
-                            // Title + image
-                            return 79 + 17
-                        }
-
-                        // Images only
-                        return 79
-                    }
-
-                    // Title + Prevew + Images
-                    return (height + 58)
-                }
+                // Images only
+                return 79
             }
+
+            // Title + Prevew + Images
+            return height + 58
         }
 
         // Title + preview
         return height
     }
 
-    func renderPinFor(row: NSInteger) {
-        if row < 0 {
-            return
-        }
-
-        if noteList.count >= row + 1, let row = self.rowView(atRow: row, makeIfNecessary: false) as? NoteRowView, let cell = row.subviews.first as? NoteCellView {
-            cell.renderPin()
-        }
-    }
-    
     // On selected row show notes in right panel
     func tableViewSelectionDidChange(_ notification: Notification) {
-        if let history = selectedHistory {
-            let selectedRowIndexes = selectedRowIndexes
-            for i in history {
-                if !selectedRowIndexes.contains(i) {
-                    renderPinFor(row: i)
-                }
-            }
-        }
-
         selectedHistory = selectedRowIndexes
 
         let vc = self.window?.contentViewController as! ViewController
-        renderPinFor(row: selectedRow)
-
         if vc.editAreaScroll.isFindBarVisible {
             let menu = NSMenuItem(title: "", action: nil, keyEquivalent: "")
             menu.tag = NSTextFinder.Action.hideFindInterface.rawValue
@@ -620,15 +573,18 @@ class NotesTableView: NSTableView, NSTableViewDataSource,
 
         DispatchQueue.main.async {
             if let i = self.noteList.firstIndex(of: note) {
-                if let row = self.rowView(atRow: i, makeIfNecessary: false) as? NoteRowView, let cell = row.subviews.first as? NoteCellView {
+                if let row = self.rowView(atRow: i, makeIfNecessary: false) as? NoteRowView {
 
-                    cell.date.stringValue = note.getDateForLabel()
-                    cell.loadImagesPreview(position: i, urls: urls)
-                    cell.attachHeaders(note: note)
-                    cell.renderPin()
-                    cell.applyPreviewStyle()
+                    if let cell = row.subviews.first as? NoteCellView {
 
-                    self.noteHeightOfRows(withIndexesChanged: [i])
+                        cell.date.stringValue = note.getDateForLabel()
+                        cell.loadImagesPreview(position: i, urls: urls)
+                        cell.attachHeaders(note: note)
+                        cell.renderPin()
+                        cell.applyPreviewStyle()
+
+                        self.noteHeightOfRows(withIndexesChanged: [i])
+                    }
                 }
             }
         }

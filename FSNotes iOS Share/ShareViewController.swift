@@ -13,54 +13,21 @@ import Social
 @objc(ShareViewController)
 
 class ShareViewController: SLComposeServiceViewController {
-    private var notes: [Note]?
-    private var projects: [Project]?
+
     private var imagesFound = false
     private var urlPreview: String?
-    private var instagram: Data?
-    
-    public var currentProject: Project?
-    public let projectItem = SLComposeSheetConfigurationItem()
-    public let appendItem = SLComposeSheetConfigurationItem()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        preferredContentSize = CGSize(width: 300, height: 300)
+
         navigationController!.navigationBar.topItem!.rightBarButtonItem!.title = NSLocalizedString("New note", comment: "")
         navigationController!.navigationBar.tintColor = UIColor.mainTheme
 
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 50, height: 20))
-        let font = UserDefaultsManagement.noteFont.italic().bold().withSize(18)
+        let font = UserDefaultsManagement.noteFont.bold().withSize(18)
         label.text = "FSNotes"
         label.font = font
         navigationController?.navigationBar.topItem?.titleView = label
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        textView.setContentOffset(.zero, animated: true)
-
-        if let table = textView.superview?.superview?.superview as? UITableView {
-            let length = table.numberOfRows(inSection: 0)
-            table.scrollToRow(at: IndexPath(row: length - 1, section: 0), at: .bottom, animated: true)
-
-            for item in 0...2 {
-                if let cell = table.cellForRow(at: IndexPath(item: item, section: 0)) {
-                    //cell.textLabel?.textColor = UIColor(red:0.19, green:0.38, blue:0.57, alpha:1.0)
-                    if let fontSize = cell.textLabel?.font.pointSize {
-                        //cell.textLabel?.font = UIFont.boldSystemFont(ofSize: fontSize)
-                    }
-                }
-            }
-        }
-
-        if let font = self.textView.font, #available(iOSApplicationExtension 11.0, *) {
-            let fontMetrics = UIFontMetrics(forTextStyle: .largeTitle)
-            self.textView.font = fontMetrics.scaledFont(for: font).italic()
-            self.textView.textColor = UIColor.darkGray
-        }
     }
 
     override func loadPreviewView() -> UIView! {
@@ -115,34 +82,14 @@ class ShareViewController: SLComposeServiceViewController {
     }
 
     override func configurationItems() -> [Any]! {
-        let storage = Storage.shared()
-        var urls = [URL]()
-
-        if let inbox = UserDefaultsManagement.storageUrl {
-            urls.append(inbox)
-        }
-
-        storage.loadProjects(from: urls)
-
-        projectItem?.title = NSLocalizedString("Project", comment: "")
-        projectItem?.tapHandler = {
-            let controller = ProjectListController()
-            controller.delegate = self
-
-            let projects = storage.getProjects()
-            controller.setProjects(projects: projects)
-
-            self.pushConfigurationViewController(controller)
-        }
-
-        return [self.projectItem!]
+        return []
     }
 
-    public func save(note: Note? = nil) {
+    public func save() {
         guard let context = self.extensionContext,
             let input = context.inputItems as? [NSExtensionItem] else { return }
 
-        let note = note ?? Note(project: self.currentProject)
+        let note = Note()
         Storage.shared().add(note)
 
         var started = 0
@@ -152,20 +99,13 @@ class ShareViewController: SLComposeServiceViewController {
         urls.insert(note.url, at: 0)
         UserDefaultsManagement.importURLs = urls
 
-        if let instagram = self.instagram {
-            note.append(image: instagram)
-            note.append(string: NSMutableAttributedString(string: "\n\n" + self.textView.text))
-            note.save()
-            self.close()
-            return
-        }
-
         for item in input {
             if let a = item.attachments {
                 for provider in a {
                     if provider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
                         started = started + 1
-                        provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil, completionHandler: { (data, error) in
+
+                        provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: [:], completionHandler: { (data, error) in
 
                             var imageData = data as? Data
 
@@ -233,12 +173,6 @@ class ShareViewController: SLComposeServiceViewController {
 
         self.close()
     }
-
-//    private func checkImage() -> UIImage {
-//        attachRow.loadItem(forTypeIdentifier: kUTTypeURL as String, options: nil, completionHandler: { (url, error) in
-//
-//        })
-//    }
 
     public func close() {
         if let context = self.extensionContext {

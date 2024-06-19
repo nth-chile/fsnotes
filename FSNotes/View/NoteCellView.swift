@@ -37,6 +37,10 @@ class NoteCellView: NSTableCellView {
         }
     }
 
+    public static var pinImages = [String: NSImage]()
+    public static var pinEncryptedImages = [String: NSImage]()
+    public static var pinSharedImages = [String: NSImage]()
+
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
@@ -66,7 +70,6 @@ class NoteCellView: NSTableCellView {
         }
 
         applyPreviewStyle()
-        applyTextColors()
 
         if !UserDefaultsManagement.horizontalOrientation && !UserDefaultsManagement.hidePreviewImages{
             self.note?.loadPreviewInfo()
@@ -161,15 +164,6 @@ class NoteCellView: NSTableCellView {
         }
     }
 
-    override var backgroundStyle: NSView.BackgroundStyle {
-        set {
-            applyTextColors()
-        }
-        get {
-            return super.backgroundStyle;
-        }
-    }
-
     public func isSelected() -> Bool {
         if let rowView = self.superview as? NSTableRowView, rowView.isSelected, window?.firstResponder == superview?.superview {
             return true
@@ -189,55 +183,18 @@ class NoteCellView: NSTableCellView {
 
         return true
     }
-    
-    public func applyTextColors() {
-        if let rowView = self.superview as? NSTableRowView, rowView.isSelected {
 
-            // first responder
-
-            if window?.firstResponder == superview?.superview {
-                name.textColor = NSColor.white
-                date.textColor = NSColor.white
-                preview.textColor = NSColor.white
-
-            // no first responder
-
-            } else {
-                let color = NSColor(named: "color_selected_not_fr")!
-
-                name.textColor = color
-                date.textColor = color
-                preview.textColor = color
-            }
-
-            return
-        }
-
-        // reset to not selected
-
-        let color = NSColor(deviceRed: 0.6, green: 0.6, blue: 0.6, alpha: 1)
-        date.textColor = color
-
-        if UserDefaultsManagement.appearanceType == AppearanceType.Custom {
-            name.textColor = NSColor.black
-        } else {
-            name.textColor = NSColor(named: "color_not_selected")!
-        }
-
-        preview.textColor = color
-    }
-    
     func renderPin() {
         if let value = objectValue, let note = value as? Note  {
             if note.isPublished() {
                 if #available(macOS 12.0, *), let image = NSImage(systemSymbolName: "globe", accessibilityDescription: nil) {
-                    var config = NSImage.SymbolConfiguration(textStyle: .body, scale: .medium)
-                    let accentColor = UserDefaults.standard.value(forKey: "AppleAccentColor") != nil ? .controlAccentColor : NSColor(red: 0.08, green: 0.60, blue: 0.85, alpha: 1.00)
-                    let color = isAccentColorTint() ? accentColor : NSColor.white
-                    config = config.applying(.init(paletteColors: [color]))
-                    pin.image = image.withSymbolConfiguration(config)
+                    pin.image = image
+                    pin.image?.isTemplate = true
+                    pin.contentTintColor = .controlAccentColor
                 } else {
                     pin.image = NSImage(named: "web")
+                    pin.image?.isTemplate = true
+                    pin.contentTintColor = .controlAccentColor
                     pin.image?.size = NSSize(width: 14, height: 14)
                 }
 
@@ -245,27 +202,27 @@ class NoteCellView: NSTableCellView {
             } else if note.isEncrypted() {
                 let systemName = note.isUnlocked() ? "lock.open" : "lock"
                 if #available(macOS 12.0, *), let image = NSImage(systemSymbolName: systemName, accessibilityDescription: nil) {
-                    var config = NSImage.SymbolConfiguration(textStyle: .body, scale: .medium)
-                    let accentColor = UserDefaults.standard.value(forKey: "AppleAccentColor") != nil ? .controlAccentColor : NSColor(red: 0.08, green: 0.60, blue: 0.85, alpha: 1.00)
-                    let color = isAccentColorTint() ? accentColor : NSColor.white
-                    config = config.applying(.init(paletteColors: [color]))
-                    pin.image = image.withSymbolConfiguration(config)
+                    pin.image = image
+                    pin.image?.isTemplate = true
+                    pin.contentTintColor = .controlAccentColor
                 } else {
                     let name = note.isUnlocked() ? "lock-open" : "lock-closed"
                     pin.image = NSImage(named: name)
+                    pin.contentTintColor = .controlAccentColor
+                    pin.image?.isTemplate = true
                     pin.image?.size = NSSize(width: 14, height: 14)
                 }
                 pin.isHidden = false
             } else {
                 if #available(macOS 12.0, *), let image = NSImage(systemSymbolName: "pin", accessibilityDescription: nil) {
-                    var config = NSImage.SymbolConfiguration(textStyle: .body, scale: .medium)
-                    let accentColor = UserDefaults.standard.value(forKey: "AppleAccentColor") != nil ? .controlAccentColor : NSColor(red: 0.08, green: 0.60, blue: 0.85, alpha: 1.00)
-                    let color = isAccentColorTint() ? accentColor : NSColor.white
-                    config = config.applying(.init(paletteColors: [color]))
-                    pin.image = image.withSymbolConfiguration(config)
+                    pin.image = image
+                    pin.image?.isTemplate = true
+                    pin.contentTintColor = .controlAccentColor
                 } else {
                     pin.image = NSImage(named: "pin")
-                    pin.image?.size = NSSize(width: 14, height: 14)
+                    pin.image?.isTemplate = true
+                    pin.contentTintColor = .controlAccentColor
+                    pin.image?.size = NSSize(width: 20, height: 20)
                 }
 
                 pin.isHidden = !note.isPinned
@@ -415,7 +372,5 @@ class NoteCellView: NSTableCellView {
         } else {
             self.date.stringValue = note.getDateForLabel()
         }
-
-        self.applyTextColors()
     }
 }

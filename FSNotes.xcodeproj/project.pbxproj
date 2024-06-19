@@ -58,8 +58,6 @@
 		D70BA87820599D1300875E9C /* header@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70BA87520599D1300875E9C /* header@3x.png */; };
 		D70BA87920599D1300875E9C /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70BA87620599D1300875E9C /* header@2x.png */; };
 		D70D6CDF225D16D800A07A01 /* NSAppearance+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7315ED4215ED95600AB49D4 /* NSAppearance+.swift */; };
-		D70E460528C35D90001A74B1 /* Shout in Frameworks */ = {isa = PBXBuildFile; productRef = D70E460428C35D90001A74B1 /* Shout */; };
-		D70E460928C35E03001A74B1 /* Shout in Frameworks */ = {isa = PBXBuildFile; productRef = D70E460828C35E03001A74B1 /* Shout */; };
 		D70E8D6923705C6200E64D62 /* tag2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70E8D6623705C6200E64D62 /* tag2@2x.png */; };
 		D70E8D6A23705C6200E64D62 /* tag2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70E8D6723705C6200E64D62 /* tag2@3x.png */; };
 		D70E8D6B23705C6200E64D62 /* tag2.png in Resources */ = {isa = PBXBuildFile; fileRef = D70E8D6823705C6200E64D62 /* tag2.png */; };
@@ -446,6 +444,7 @@
 		D76025C0204F078A000B9F59 /* bold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D76025BD204F078A000B9F59 /* bold@2x.png */; };
 		D76025C1204F078A000B9F59 /* bold.png in Resources */ = {isa = PBXBuildFile; fileRef = D76025BE204F078A000B9F59 /* bold.png */; };
 		D76447DC1F3A4F0700965F01 /* UserDefaultsManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76447DB1F3A4F0700965F01 /* UserDefaultsManagement.swift */; };
+		D76755652B9E2840003714C8 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = D76755642B9E2840003714C8 /* SwiftSoup */; };
 		D7679376201F0BFD000F7BBF /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7679375201F0BFD000F7BBF /* SortBy.swift */; };
 		D7679377201F0BFD000F7BBF /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7679375201F0BFD000F7BBF /* SortBy.swift */; };
 		D7679389201F21F5000F7BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7679388201F21F5000F7BBF /* AppDelegate.swift */; };
@@ -587,12 +586,9 @@
 		D7A9C1D92910784400905619 /* Project+Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A9C1D52910784400905619 /* Project+Git.swift */; };
 		D7A9C1DB29107A0800905619 /* Git in Frameworks */ = {isa = PBXBuildFile; productRef = D7A9C1DA29107A0800905619 /* Git */; };
 		D7A9C1DC29107B7600905619 /* Reference+Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73BCC8B28EB5EC3008B3BBC /* Reference+Target.swift */; };
-		D7A9C1DE2910819C00905619 /* Shout in Frameworks */ = {isa = PBXBuildFile; productRef = D7A9C1DD2910819C00905619 /* Shout */; };
 		D7ADFD112066CF9400B531F9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ADFD102066CF9400B531F9 /* CoreLocation.framework */; };
 		D7B024A72019BCF3008544C3 /* NoteAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B024A62019BCF3008544C3 /* NoteAttribute.swift */; };
 		D7B024A82019BCF3008544C3 /* NoteAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B024A62019BCF3008544C3 /* NoteAttribute.swift */; };
-		D7B15A1C28D76A9400643FA5 /* logo_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B15A1B28D76A9400643FA5 /* logo_editor.png */; };
-		D7B15A1D28D76A9400643FA5 /* logo_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B15A1B28D76A9400643FA5 /* logo_editor.png */; };
 		D7B1F6AC246895B000593001 /* new_note_ui.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B1F6AB246895B000593001 /* new_note_ui.png */; };
 		D7B1F6AD246895B000593001 /* new_note_ui.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B1F6AB246895B000593001 /* new_note_ui.png */; };
 		D7B1F6B1246A686700593001 /* ordered_list.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B1F6AF246A686600593001 /* ordered_list.png */; };
@@ -746,7 +742,6 @@
 		D7CD5CD7218234010009D63B /* NoteAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B024A62019BCF3008544C3 /* NoteAttribute.swift */; };
 		D7CD5CDB21832C190009D63B /* UserDefaultsManagement+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD5CDA21832C190009D63B /* UserDefaultsManagement+.swift */; };
 		D7CD5CDC21832C190009D63B /* UserDefaultsManagement+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD5CDA21832C190009D63B /* UserDefaultsManagement+.swift */; };
-		D7CD5CE1218345A80009D63B /* NotesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD5CE0218345A80009D63B /* NotesListController.swift */; };
 		D7CD5CE321836A230009D63B /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76025C2204F2820000B9F59 /* UIFont+.swift */; };
 		D7CD5F681F508E74006AA35D /* SourceCodePro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CD5F671F508E6A006AA35D /* SourceCodePro-Bold.ttf */; };
 		D7CD5F691F508E74006AA35D /* SourceCodePro-BoldIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CD5F661F508E6A006AA35D /* SourceCodePro-BoldIt.ttf */; };
@@ -784,6 +779,9 @@
 		D7D06535247B03A800214326 /* more_row_action.png in Resources */ = {isa = PBXBuildFile; fileRef = D7D06534247B03A800214326 /* more_row_action.png */; };
 		D7D1DE68216D05A800AC1845 /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D1DE67216D05A800AC1845 /* NameTextField.swift */; };
 		D7D1DE69216D05A800AC1845 /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D1DE67216D05A800AC1845 /* NameTextField.swift */; };
+		D7D2F27E2B54BD42003DCA47 /* Shout in Frameworks */ = {isa = PBXBuildFile; productRef = D7D2F27D2B54BD42003DCA47 /* Shout */; };
+		D7D2F2802B54BDD4003DCA47 /* Shout in Frameworks */ = {isa = PBXBuildFile; productRef = D7D2F27F2B54BDD4003DCA47 /* Shout */; };
+		D7D2F2822B54BE59003DCA47 /* Shout in Frameworks */ = {isa = PBXBuildFile; productRef = D7D2F2812B54BE59003DCA47 /* Shout */; };
 		D7D372F4207B5B0F00AFBD9F /* SidebarNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D372F3207B5B0F00AFBD9F /* SidebarNotesView.swift */; };
 		D7D372F5207B5B0F00AFBD9F /* SidebarNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D372F3207B5B0F00AFBD9F /* SidebarNotesView.swift */; };
 		D7D372F7207BB09500AFBD9F /* SidebarOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D372F6207BB09500AFBD9F /* SidebarOutlineView.swift */; };
@@ -825,6 +823,7 @@
 		D7DD79581F4E60D000D5724B /* SourceCodePro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DD79561F4E606600D5724B /* SourceCodePro-Black.ttf */; };
 		D7DD79591F4E60D000D5724B /* SourceCodePro-It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DD79551F4E606600D5724B /* SourceCodePro-It.ttf */; };
 		D7DD795B1F4E611D00D5724B /* SourceCodePro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DD795A1F4E611200D5724B /* SourceCodePro-Regular.ttf */; };
+		D7DEEC662BD561BE00C2A6CE /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = D7DEEC652BD561BE00C2A6CE /* SwiftSoup */; };
 		D7DF401C20A37717000F8B13 /* repository_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D7DF401720A37716000F8B13 /* repository_white.png */; };
 		D7DF401F20A37717000F8B13 /* tag_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D7DF401A20A37717000F8B13 /* tag_white.png */; };
 		D7DF402420A377BE000F8B13 /* repository_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D7DF401720A37716000F8B13 /* repository_white.png */; };
@@ -935,7 +934,6 @@
 		D7F2F1C421C503F000E41811 /* AvenirNext-UltraLightIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7F2F19621C503F000E41811 /* AvenirNext-UltraLightIt.ttf */; };
 		D7F2F1C521C503F000E41811 /* AvenirNext-UltraLightIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7F2F19621C503F000E41811 /* AvenirNext-UltraLightIt.ttf */; };
 		D7F2F1C621C503F000E41811 /* AvenirNext-UltraLightIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7F2F19621C503F000E41811 /* AvenirNext-UltraLightIt.ttf */; };
-		D7F2F1C821C68B5700E41811 /* ProjectListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F2F1C721C68B5700E41811 /* ProjectListController.swift */; };
 		D7F5C0EF223ED0570038F172 /* PreferencesGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F5C0EE223ED0570038F172 /* PreferencesGeneralViewController.swift */; };
 		D7F5C0F0223ED0570038F172 /* PreferencesGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F5C0EE223ED0570038F172 /* PreferencesGeneralViewController.swift */; };
 		D7F5C0F2223ED0C00038F172 /* PreferencesUserInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F5C0F1223ED0C00038F172 /* PreferencesUserInterfaceViewController.swift */; };
@@ -957,6 +955,7 @@
 		D7FA916920555067002BB0AB /* SourceCodePro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7DD795A1F4E611200D5724B /* SourceCodePro-Regular.ttf */; };
 		D7FAE29B22DDDCF3003874D1 /* inbox_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D7FAE29922DDDCF2003874D1 /* inbox_white.png */; };
 		D7FAE29C22DDDCF3003874D1 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D7FAE29A22DDDCF2003874D1 /* inbox.png */; };
+		D7FB716C2BE7F66500808E56 /* EditorViewController+QuickLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB716B2BE7F66500808E56 /* EditorViewController+QuickLook.swift */; };
 		D7FDA4F7236DBC6900C3B4AA /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDA4F6236DBC6900C3B4AA /* Sidebar.swift */; };
 		D7FFD09C1FF677ED0064CBA6 /* NotesTextProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F95F391FF2759300E2A447 /* NotesTextProcessor.swift */; };
 /* End PBXBuildFile section */
@@ -1394,7 +1393,6 @@
 		D7A9C1D52910784400905619 /* Project+Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+Git.swift"; sourceTree = "<group>"; };
 		D7ADFD102066CF9400B531F9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		D7B024A62019BCF3008544C3 /* NoteAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAttribute.swift; sourceTree = "<group>"; };
-		D7B15A1B28D76A9400643FA5 /* logo_editor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_editor.png; sourceTree = "<group>"; };
 		D7B1F6AB246895B000593001 /* new_note_ui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_note_ui.png; sourceTree = "<group>"; };
 		D7B1F6AF246A686600593001 /* ordered_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ordered_list.png; sourceTree = "<group>"; };
 		D7B1F6B0246A686600593001 /* numbered_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numbered_list.png; sourceTree = "<group>"; };
@@ -1448,7 +1446,6 @@
 		D7CC44C52A1E5F7600743857 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		D7CD5CCA21820A380009D63B /* UserDefaultsManagement+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaultsManagement+.swift"; sourceTree = "<group>"; };
 		D7CD5CDA21832C190009D63B /* UserDefaultsManagement+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaultsManagement+.swift"; sourceTree = "<group>"; };
-		D7CD5CE0218345A80009D63B /* NotesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListController.swift; sourceTree = "<group>"; };
 		D7CD5F661F508E6A006AA35D /* SourceCodePro-BoldIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-BoldIt.ttf"; sourceTree = "<group>"; };
 		D7CD5F671F508E6A006AA35D /* SourceCodePro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Bold.ttf"; sourceTree = "<group>"; };
 		D7CD5F6B1F51185F006AA35D /* NSFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSFont+.swift"; sourceTree = "<group>"; };
@@ -1540,7 +1537,6 @@
 		D7F2F19421C503F000E41811 /* AvenirNext-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNext-Italic.ttf"; sourceTree = "<group>"; };
 		D7F2F19521C503F000E41811 /* AvenirNext-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNext-LightItalic.ttf"; sourceTree = "<group>"; };
 		D7F2F19621C503F000E41811 /* AvenirNext-UltraLightIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNext-UltraLightIt.ttf"; sourceTree = "<group>"; };
-		D7F2F1C721C68B5700E41811 /* ProjectListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListController.swift; sourceTree = "<group>"; };
 		D7F5C0EE223ED0570038F172 /* PreferencesGeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesGeneralViewController.swift; sourceTree = "<group>"; };
 		D7F5C0F1223ED0C00038F172 /* PreferencesUserInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesUserInterfaceViewController.swift; sourceTree = "<group>"; };
 		D7F5C0F4223ED5620038F172 /* PreferencesEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesEditorViewController.swift; sourceTree = "<group>"; };
@@ -1551,6 +1547,7 @@
 		D7F95F391FF2759300E2A447 /* NotesTextProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTextProcessor.swift; sourceTree = "<group>"; };
 		D7FAE29922DDDCF2003874D1 /* inbox_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox_white.png; sourceTree = "<group>"; };
 		D7FAE29A22DDDCF2003874D1 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
+		D7FB716B2BE7F66500808E56 /* EditorViewController+QuickLook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorViewController+QuickLook.swift"; sourceTree = "<group>"; };
 		D7FDA4F6236DBC6900C3B4AA /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		E73B6900CD2E14B0D5E51599 /* Pods-FSNotes iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSNotes iOS.debug.xcconfig"; path = "Target Support Files/Pods-FSNotes iOS/Pods-FSNotes iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EF024607824ECBF0AE378D65 /* Pods-FSNotes (iCloud).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSNotes (iCloud).release.xcconfig"; path = "Target Support Files/Pods-FSNotes (iCloud)/Pods-FSNotes (iCloud).release.xcconfig"; sourceTree = "<group>"; };
@@ -1586,9 +1583,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7A9C1DE2910819C00905619 /* Shout in Frameworks */,
 				D7A9C1DB29107A0800905619 /* Git in Frameworks */,
 				D717461C293D2929005951EE /* SoulverCore in Frameworks */,
+				D7D2F2802B54BDD4003DCA47 /* Shout in Frameworks */,
 				D7ADFD112066CF9400B531F9 /* CoreLocation.framework in Frameworks */,
 				CE3427A778205E1713A014B9 /* Pods_FSNotes_iOS.framework in Frameworks */,
 			);
@@ -1598,11 +1595,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D70E460528C35D90001A74B1 /* Shout in Frameworks */,
 				6F13BB1920FEDDF50005E120 /* FSNotesCore_macOS.framework in Frameworks */,
 				D7F1AEB2292177060088F473 /* SoulverCore in Frameworks */,
+				D7D2F2822B54BE59003DCA47 /* Shout in Frameworks */,
 				D70F830628CE8596004818C5 /* Git in Frameworks */,
 				D4DB932C9F51CAE71393A28B /* Pods_FSNotes.framework in Frameworks */,
+				D7DEEC662BD561BE00C2A6CE /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1610,10 +1608,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D2F27E2B54BD42003DCA47 /* Shout in Frameworks */,
 				D7F1AEB32921774B0088F473 /* SoulverCore in Frameworks */,
 				D70F830428CE858E004818C5 /* Git in Frameworks */,
-				D70E460928C35E03001A74B1 /* Shout in Frameworks */,
 				BE957A4A1B908EC91BECB3D3 /* Pods_FSNotes__iCloud_.framework in Frameworks */,
+				D76755652B9E2840003714C8 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2046,8 +2045,6 @@
 			children = (
 				D75F3344205ECE8900CC887E /* FSNotes iOS Share.entitlements */,
 				D75F3338205EC34800CC887E /* ShareViewController.swift */,
-				D7CD5CE0218345A80009D63B /* NotesListController.swift */,
-				D7F2F1C721C68B5700E41811 /* ProjectListController.swift */,
 				D75F333D205EC34800CC887E /* Info.plist */,
 				D7163D3324E81D9900B1FC05 /* MainInterface.storyboard */,
 				42E001C92ADAC2930099E7AD /* Localizable.xcstrings */,
@@ -2116,6 +2113,7 @@
 				D767938A201F21F5000F7BBF /* ViewController.swift */,
 				D7C6DB5A25AA880600F8F76F /* ViewController+More.swift */,
 				D7063969202230BB00BC8446 /* EditorViewController.swift */,
+				D7FB716B2BE7F66500808E56 /* EditorViewController+QuickLook.swift */,
 				D71AA0212143A4A8004AFD2A /* MoveViewController.swift */,
 				D7163D2E24E81B5C00B1FC05 /* Main.storyboard */,
 				D77F41B22A0D48F500E2B7A2 /* Launch Screen.storyboard */,
@@ -2296,7 +2294,6 @@
 				D7DD79561F4E606600D5724B /* SourceCodePro-Black.ttf */,
 				D70A727323944846006AF320 /* checkbox1012.png */,
 				D70A7277239467C1006AF320 /* checkbox_empty1012.png */,
-				D7B15A1B28D76A9400643FA5 /* logo_editor.png */,
 				D7CD5F671F508E6A006AA35D /* SourceCodePro-Bold.ttf */,
 				D7CD5F661F508E6A006AA35D /* SourceCodePro-BoldIt.ttf */,
 				D7DD79551F4E606600D5724B /* SourceCodePro-It.ttf */,
@@ -2613,8 +2610,8 @@
 			name = "FSNotes iOS";
 			packageProductDependencies = (
 				D7A9C1DA29107A0800905619 /* Git */,
-				D7A9C1DD2910819C00905619 /* Shout */,
 				D7F1AEB1292177060088F473 /* SoulverCore */,
+				D7D2F27F2B54BDD4003DCA47 /* Shout */,
 			);
 			productName = "FSNotes iOS";
 			productReference = D7679386201F21F5000F7BBF /* FSNotes iOS.app */;
@@ -2640,9 +2637,10 @@
 			);
 			name = FSNotes;
 			packageProductDependencies = (
-				D70E460428C35D90001A74B1 /* Shout */,
 				D70F830528CE8596004818C5 /* Git */,
 				D7F1AEB1292177060088F473 /* SoulverCore */,
+				D7D2F2812B54BE59003DCA47 /* Shout */,
+				D7DEEC652BD561BE00C2A6CE /* SwiftSoup */,
 			);
 			productName = FSNotes;
 			productReference = D7793C6F1F211C6000CA39B7 /* FSNotes.app */;
@@ -2667,9 +2665,10 @@
 			);
 			name = "FSNotes (iCloud)";
 			packageProductDependencies = (
-				D70E460828C35E03001A74B1 /* Shout */,
 				D70F830328CE858E004818C5 /* Git */,
 				D7F1AEB1292177060088F473 /* SoulverCore */,
+				D7D2F27D2B54BD42003DCA47 /* Shout */,
+				D76755642B9E2840003714C8 /* SwiftSoup */,
 			);
 			productName = FSNotes;
 			productReference = D7E81C5A1F925B5F00416A91 /* FSNotes.app */;
@@ -2787,12 +2786,14 @@
 				ja,
 				"pt-BR",
 				ru,
+				cs,
 			);
 			mainGroup = D7793C661F211C6000CA39B7;
 			packageReferences = (
-				D70E460328C35D90001A74B1 /* XCRemoteSwiftPackageReference "Shout" */,
 				D7B4CC5428C7B8860046A25F /* XCRemoteSwiftPackageReference "swift-git" */,
 				D7F1AEB0292177060088F473 /* XCRemoteSwiftPackageReference "SoulverCore" */,
+				D7D2F27C2B54BD42003DCA47 /* XCRemoteSwiftPackageReference "Shout" */,
+				D76755632B9E2840003714C8 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = D7793C701F211C6000CA39B7 /* Products */;
 			projectDirPath = "";
@@ -3053,7 +3054,6 @@
 				D759D1FA2276D25C00961E90 /* icon_alt.png in Resources */,
 				D7CD5F681F508E74006AA35D /* SourceCodePro-Bold.ttf in Resources */,
 				D7F2F19D21C503F000E41811 /* AvenirNext-Medium.ttf in Resources */,
-				D7B15A1C28D76A9400643FA5 /* logo_editor.png in Resources */,
 				D7F2F1B821C503F000E41811 /* AvenirNext-Bold.ttf in Resources */,
 				D7CD5F691F508E74006AA35D /* SourceCodePro-BoldIt.ttf in Resources */,
 				D720241522A9412B000A7691 /* TextBundle.icns in Resources */,
@@ -3125,7 +3125,6 @@
 				D7CAD6AB20DD50A500FF4674 /* tag_red.png in Resources */,
 				D7F2F1BC21C503F000E41811 /* AvenirNext-Thin.ttf in Resources */,
 				D7C690C522AAE16200BFBBD1 /* indent@3x.png in Resources */,
-				D7B15A1D28D76A9400643FA5 /* logo_editor.png in Resources */,
 				D7C690D522AB033B00BFBBD1 /* tb_link.png in Resources */,
 				D7C690B222AA4B2900BFBBD1 /* todo@2x.png in Resources */,
 				D7C690AE22AA4B1E00BFBBD1 /* italic.png in Resources */,
@@ -3490,7 +3489,6 @@
 				D7B34F9B25195D7E0007877E /* PreviewState.swift in Sources */,
 				D77E0539246312B400AD7772 /* StorageType.swift in Sources */,
 				D7CD5CD521820D700009D63B /* ImagesProcessor.swift in Sources */,
-				D7CD5CE1218345A80009D63B /* NotesListController.swift in Sources */,
 				D79A13CE2A0E9C980037510B /* UIColor+.swift in Sources */,
 				D7B2B6EC245EEA790084B78D /* LanguageType.swift in Sources */,
 				D7CD5CC9218209D80009D63B /* NoteType.swift in Sources */,
@@ -3504,7 +3502,6 @@
 				D7CD5CD021820CBC0009D63B /* URL+.swift in Sources */,
 				D7958A3A22ED512D00EDBDDC /* SandboxBookmark.swift in Sources */,
 				D7CD5CCE21820C9D0009D63B /* DateFormatter+.swift in Sources */,
-				D7F2F1C821C68B5700E41811 /* ProjectListController.swift in Sources */,
 				D7B4AC622471253100F3888A /* NoteMeta.swift in Sources */,
 				D75627D226D1165A000AF6EA /* ImageFormat.swift in Sources */,
 				D7CD5CC42181F7530009D63B /* Storage.swift in Sources */,
@@ -3612,6 +3609,7 @@
 				D71354042042AFC800E3776F /* SettingsViewController.swift in Sources */,
 				D7735B09213D01E000FACB12 /* Toolbar.swift in Sources */,
 				D785805827A1FA0F000C1BAF /* UITableViewController+.swift in Sources */,
+				D7FB716C2BE7F66500808E56 /* EditorViewController+QuickLook.swift in Sources */,
 				D70716DC2307E82900B44B0D /* SingleImageTouchDownGestureRecognizer.swift in Sources */,
 				D70E9E072901AEC400A3C634 /* Index+Commit.swift in Sources */,
 				D75629B527D5036D00F55588 /* SortByViewController.swift in Sources */,
@@ -4220,7 +4218,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 269;
+				CURRENT_PROJECT_VERSION = 285;
 				DEVELOPMENT_TEAM = 866P6MTE92;
 				INFOPLIST_FILE = "FSNotes iOS Share/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -4229,7 +4227,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 6.1.1;
+				MARKETING_VERSION = 6.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.fluder.mobile.FSNotes-iOS.FSNotes-iOS-Share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -4250,7 +4248,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 269;
+				CURRENT_PROJECT_VERSION = 285;
 				DEVELOPMENT_TEAM = 866P6MTE92;
 				ENABLE_NS_ASSERTIONS = NO;
 				INFOPLIST_FILE = "FSNotes iOS Share/Info.plist";
@@ -4260,7 +4258,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 6.1.1;
+				MARKETING_VERSION = 6.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.fluder.mobile.FSNotes-iOS.FSNotes-iOS-Share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -4285,7 +4283,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 272;
+				CURRENT_PROJECT_VERSION = 285;
 				DEVELOPMENT_TEAM = 866P6MTE92;
 				INFOPLIST_FILE = "FSNotes iOS/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
@@ -4294,7 +4292,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.2.0;
+				MARKETING_VERSION = 6.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.fluder.mobile.FSNotes-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -4321,7 +4319,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 272;
+				CURRENT_PROJECT_VERSION = 285;
 				DEVELOPMENT_TEAM = 866P6MTE92;
 				ENABLE_NS_ASSERTIONS = NO;
 				INFOPLIST_FILE = "FSNotes iOS/Info.plist";
@@ -4331,7 +4329,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.2.0;
+				MARKETING_VERSION = 6.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.fluder.mobile.FSNotes-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -4553,7 +4551,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 607;
+				CURRENT_PROJECT_VERSION = 626;
 				DEVELOPMENT_TEAM = 866P6MTE92;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -4570,7 +4568,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 6.6.3;
+				MARKETING_VERSION = 6.8.0;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = co.fluder.FSNotes;
 				PRODUCT_NAME = FSNotes;
@@ -4593,7 +4591,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 607;
+				CURRENT_PROJECT_VERSION = 626;
 				DEPLOYMENT_LOCATION = NO;
 				DEVELOPMENT_TEAM = 866P6MTE92;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
@@ -4611,7 +4609,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 6.6.3;
+				MARKETING_VERSION = 6.8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = co.fluder.FSNotes;
 				PRODUCT_NAME = FSNotes;
@@ -4702,12 +4700,12 @@
 				minimumVersion = 2.2.0;
 			};
 		};
-		D70E460328C35D90001A74B1 /* XCRemoteSwiftPackageReference "Shout" */ = {
+		D76755632B9E2840003714C8 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/glushchenko/Shout";
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
 			};
 		};
 		D7B4CC5428C7B8860046A25F /* XCRemoteSwiftPackageReference "swift-git" */ = {
@@ -4716,6 +4714,14 @@
 			requirement = {
 				kind = revision;
 				revision = 7b2f3af96c6947308b4f0b4ae02302fd47a5eff2;
+			};
+		};
+		D7D2F27C2B54BD42003DCA47 /* XCRemoteSwiftPackageReference "Shout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/glushchenko/Shout";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 		D7F1AEB0292177060088F473 /* XCRemoteSwiftPackageReference "SoulverCore" */ = {
@@ -4739,16 +4745,6 @@
 			package = D70B1FA12920D91A003923DC /* XCRemoteSwiftPackageReference "SoulverCore" */;
 			productName = SoulverCore;
 		};
-		D70E460428C35D90001A74B1 /* Shout */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D70E460328C35D90001A74B1 /* XCRemoteSwiftPackageReference "Shout" */;
-			productName = Shout;
-		};
-		D70E460828C35E03001A74B1 /* Shout */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D70E460328C35D90001A74B1 /* XCRemoteSwiftPackageReference "Shout" */;
-			productName = Shout;
-		};
 		D70F830328CE858E004818C5 /* Git */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D7B4CC5428C7B8860046A25F /* XCRemoteSwiftPackageReference "swift-git" */;
@@ -4759,15 +4755,35 @@
 			package = D7B4CC5428C7B8860046A25F /* XCRemoteSwiftPackageReference "swift-git" */;
 			productName = Git;
 		};
+		D76755642B9E2840003714C8 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D76755632B9E2840003714C8 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
 		D7A9C1DA29107A0800905619 /* Git */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D7B4CC5428C7B8860046A25F /* XCRemoteSwiftPackageReference "swift-git" */;
 			productName = Git;
 		};
-		D7A9C1DD2910819C00905619 /* Shout */ = {
+		D7D2F27D2B54BD42003DCA47 /* Shout */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D70E460328C35D90001A74B1 /* XCRemoteSwiftPackageReference "Shout" */;
+			package = D7D2F27C2B54BD42003DCA47 /* XCRemoteSwiftPackageReference "Shout" */;
 			productName = Shout;
+		};
+		D7D2F27F2B54BDD4003DCA47 /* Shout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7D2F27C2B54BD42003DCA47 /* XCRemoteSwiftPackageReference "Shout" */;
+			productName = Shout;
+		};
+		D7D2F2812B54BE59003DCA47 /* Shout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7D2F27C2B54BD42003DCA47 /* XCRemoteSwiftPackageReference "Shout" */;
+			productName = Shout;
+		};
+		D7DEEC652BD561BE00C2A6CE /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D76755632B9E2840003714C8 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
 		};
 		D7F1AEB1292177060088F473 /* SoulverCore */ = {
 			isa = XCSwiftPackageProductDependency;

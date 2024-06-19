@@ -21,7 +21,6 @@ class PreferencesAdvancedViewController: NSViewController {
     @IBOutlet weak var dockIconFirst: NSButton!
     @IBOutlet weak var dockIconSecond: NSButton!
 
-    @IBOutlet weak var markdownPreviewCSS: NSPathControl!
     @IBOutlet weak var trashPath: NSPathControl!
     
     @IBAction func appearanceClick(_ sender: NSPopUpButton) {
@@ -41,6 +40,7 @@ class PreferencesAdvancedViewController: NSViewController {
             LanguageType(rawValue: 0x04),
             LanguageType(rawValue: 0x05),
             LanguageType(rawValue: 0x06),
+            LanguageType(rawValue: 15),
             LanguageType(rawValue: 0x07),
             LanguageType(rawValue: 0x08),
             LanguageType(rawValue: 0x09),
@@ -85,10 +85,6 @@ class PreferencesAdvancedViewController: NSViewController {
         default:
             dockIconFirst.state = .on
         }
-
-        if let preview = UserDefaultsManagement.markdownPreviewCSS {
-            markdownPreviewCSS.url = preview
-        }
         
         if let url = Storage.shared().getDefaultTrash()?.url {
             trashPath.url = url
@@ -122,13 +118,7 @@ class PreferencesAdvancedViewController: NSViewController {
         guard let appDelegate = NSApplication.shared.delegate as? AppDelegate else { return }
         appDelegate.loadDockIcon()
     }
-    
-    @IBAction func editCss(_ sender: Any) {
-        if let url = UserDefaultsManagement.markdownPreviewCSS {
-            NSWorkspace.shared.activateFileViewerSelecting([url])
-        }
-    }
-    
+
     @IBAction func trash(_ sender: NSButton) {
         let openPanel = NSOpenPanel()
         openPanel.directoryURL = Storage.shared().getDefaultTrash()?.url

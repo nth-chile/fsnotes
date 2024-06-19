@@ -24,10 +24,6 @@ class FileSystemEventManager {
     public func start() {
         watcher = FileWatcher(self.observedFolders)
         watcher?.callback = { event in
-            if UserDataService.instance.fsUpdatesDisabled {
-                return
-            }
-            
             guard let path = event.path.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
                 return
             }
@@ -90,7 +86,7 @@ class FileSystemEventManager {
         let dirURL = URL(fileURLWithPath: event.path, isDirectory: true)
         let project = self.storage.getProjectBy(url: dirURL)
 
-        guard dirURL.lastPathComponent != ".git" else {
+        if dirURL.path.contains("/.") {
             return
         }
         
@@ -117,8 +113,8 @@ class FileSystemEventManager {
                 }
             } else {
                 if FileManager.default.directoryExists(atUrl: dirURL) {
-                    if let projects = self.storage.insert(url: dirURL) {
-                        OperationQueue.main.addOperation {
+                    OperationQueue.main.addOperation {
+                        if let projects = self.storage.insert(url: dirURL) {
                             self.delegate.sidebarOutlineView.insertRows(projects: projects)
                         }
                     }
@@ -140,12 +136,11 @@ class FileSystemEventManager {
         if event.dirCreated || (
             event.dirChange && dirURL.hasNonHiddenBit()
         ) {
-            if let projects = self.storage.insert(url: dirURL) {
-                OperationQueue.main.addOperation {
+            OperationQueue.main.addOperation {
+                if let projects = self.storage.insert(url: dirURL) {
                     self.delegate.sidebarOutlineView.insertRows(projects: projects)
                 }
             }
-            
             return
         }
     }
@@ -243,7 +238,6 @@ class FileSystemEventManager {
     private func reloadNote(note: Note) {
         guard note.container != .encryptedTextPack else { return }
 
-        let memoryContent = note.content.attributedSubstring(from: NSRange(0..<note.content.length))
         guard var fsContent = note.getContent() else { return }
 
         // Trying load content from encrypted note with current password
@@ -251,12 +245,12 @@ class FileSystemEventManager {
             fsContent = note.content
         }
 
-        if (
-            note.isRTF() && fsContent != memoryContent)
-            || (
-                !note.isRTF() && fsContent.string != memoryContent.string
-            )
-        {
+        guard let modificationDate = note.getFileModifiedDate(),
+              let creationDate = note.getFileCreationDate() else { return }
+
+        if modificationDate > note.modifiedLocalAt {
+            
+            note.modifiedLocalAt = modificationDate
             note.cacheHash = nil
             note.content = NSMutableAttributedString(attributedString: fsContent)
 
@@ -288,17 +282,16 @@ class FileSystemEventManager {
                     }
                 }
             }
-        } else if let modificationDate = note.getFileModifiedDate(), let creationDate = note.getFileCreationDate() {
-            if modificationDate != note.modifiedLocalAt || creationDate != note.creationDate {
-                note.modifiedLocalAt = modificationDate
-                note.creationDate = creationDate
+        }
+
+        if creationDate != note.creationDate {
+            note.creationDate = creationDate
                 
-                delegate.notesTableView.reloadDate(note: note)
-                delegate.reSort(note: note)
+            delegate.notesTableView.reloadDate(note: note)
+            delegate.reSort(note: note)
                 
-                // Reload images if note moved (cache invalidated)
-                note.loadPreviewInfo()
-            }
+            // Reload images if note moved (cache invalidated)
+            note.loadPreviewInfo()
         }
     }
     

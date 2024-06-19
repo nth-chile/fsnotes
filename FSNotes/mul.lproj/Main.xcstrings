@@ -2,19 +2,103 @@
   "sourceLanguage" : "en",
   "strings" : {
     "0f7-Za-V0B.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Copyright © 2017-2023 Oleksandr Hlushchenko.\\nAll rights reserved.\"; ObjectID = \"0f7-Za-V0B\"; Note = \"#bc-ignore!\";",
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Copyright © 2017-2024 Oleksandr Hlushchenko.\\nAll rights reserved.\"; ObjectID = \"0f7-Za-V0B\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copyright © 2017-2024 Oleksandr Hlushchenko.\nVšechna práva vyhrazena."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Copyright © 2017-2023 Oleksandr Hlushchenko.\nAll rights reserved."
+            "value" : "Copyright © 2017-2024 Oleksandr Hlushchenko.\nAll rights reserved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copyright © 2017-2023 Oleksandr Hlushchenko.\nВсе права защищены."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -27,6 +111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "example.com"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "priklad.com"
           }
         },
         "de" : {
@@ -125,6 +215,12 @@
             "value" : "ابحث"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -219,6 +315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "2 Spaces"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 mezery"
           }
         },
         "de" : {
@@ -317,6 +419,12 @@
             "value" : "Locked"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamčeno"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -411,6 +519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عنوان"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis"
           }
         },
         "de" : {
@@ -509,6 +623,12 @@
             "value" : "قائمة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seznam"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -600,6 +720,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "xcode"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "xcode"
@@ -701,6 +827,12 @@
             "value" : "Remove"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odebrat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -792,6 +924,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FSNotes"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "FSNotes"
@@ -893,6 +1031,12 @@
             "value" : "TextEdit"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TextEdit"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -987,6 +1131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "رمز الإرساء:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikona:"
           }
         },
         "de" : {
@@ -1085,6 +1235,12 @@
             "value" : "جديد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nový"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1179,6 +1335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ساعة في"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hodin, vždy"
           }
         },
         "de" : {
@@ -1277,6 +1439,12 @@
             "value" : "التحولات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transformace"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1368,6 +1536,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Git"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Git"
@@ -1469,6 +1643,12 @@
             "value" : "ملاحظة جديدة في نافذة جديدة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nové okno"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1555,32 +1735,20 @@
         }
       }
     },
-    "2ZQ-YX-F9M.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Table View Cell\"; ObjectID = \"2ZQ-YX-F9M\"; Note = \"#bc-ignore!\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Table View Cell"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Table View Cell"
-          }
-        }
-      }
-    },
     "3iM-ZV-3Gf.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Restore cursor position\"; ObjectID = \"3iM-ZV-3Gf\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "ar-IQ" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "استعادة موضع المؤشر"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obnovit pozici kurzoru"
           }
         },
         "de" : {
@@ -1679,6 +1847,12 @@
             "value" : "التهجئة والقواعد اللغوية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pravopis a gramatika"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1773,6 +1947,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "نسخ العنوان"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopírovat nadpis"
           }
         },
         "de" : {
@@ -1871,6 +2051,12 @@
             "value" : "تغيير كلمة السر الرئيسية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Změnit hlavní heslo"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1965,6 +2151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كلام"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Řeč"
           }
         },
         "de" : {
@@ -2063,6 +2255,12 @@
             "value" : "None Selected "
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nic nevybráno"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2157,6 +2355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "فتح"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřít externí"
           }
         },
         "de" : {
@@ -2255,6 +2459,12 @@
             "value" : "مجلد جديد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vytvořit složku"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2349,6 +2559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ترتيب حسب:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Řadit podle:"
           }
         },
         "de" : {
@@ -2447,6 +2663,12 @@
             "value" : "بحث"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2538,6 +2760,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hlushchenko"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "hlushchenko"
@@ -2639,6 +2867,12 @@
             "value" : "الدخول بشاشة كاملة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spustit režim celé obrazovky"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2733,6 +2967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الخروج من FSNotes"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukončit FSNotes"
           }
         },
         "de" : {
@@ -2831,6 +3071,12 @@
             "value" : "https://github.com/glushchenko/fsnotes.git"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "git@github.com:uzivatel/repo.git"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2925,6 +3171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ازالة التشفير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odebrat šifrování"
           }
         },
         "de" : {
@@ -3023,6 +3275,12 @@
             "value" : "حول FSNotes"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O aplikaci FSNotes"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3117,6 +3375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "نسخ العنوان"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopírovat nadpis"
           }
         },
         "de" : {
@@ -3215,6 +3479,12 @@
             "value" : "ترتيب حسب"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Řadit podle"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3309,6 +3579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تعديل"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upravit"
           }
         },
         "de" : {
@@ -3407,6 +3683,12 @@
             "value" : "اخفاء معاينة الصور"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt náhled obrázků"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3501,6 +3783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "استرجاع"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opakovat akci"
           }
         },
         "de" : {
@@ -3599,6 +3887,12 @@
             "value" : "Code ثيم:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motiv kódu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3693,6 +3987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "قفل"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknout"
           }
         },
         "de" : {
@@ -3791,6 +4091,12 @@
             "value" : "كتل رمز مسافة بادئة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zvýraznit odsazené bloky kódu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3885,6 +4191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اغلاق"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřít"
           }
         },
         "de" : {
@@ -3983,6 +4295,12 @@
             "value" : "Clone"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klonovat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4077,6 +4395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كلمة المرور الحالية:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Současné heslo:"
           }
         },
         "de" : {
@@ -4175,6 +4499,12 @@
             "value" : "فتح خارجي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřít externí"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4269,6 +4599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مجموعة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavit"
           }
         },
         "de" : {
@@ -4367,6 +4703,12 @@
             "value" : "التغيير"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Změnit"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4461,6 +4803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "صغير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Malé"
           }
         },
         "de" : {
@@ -4559,6 +4907,12 @@
             "value" : "قائمة مرتبة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Řazený seznam"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4653,6 +5007,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "قفل عند تحول المستخدم"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknout při přepnutí uživatele"
           }
         },
         "de" : {
@@ -4751,6 +5111,12 @@
             "value" : "أوراق اعتماد:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přístupové údaje"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4845,6 +5211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "لون الملاحظة:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barva poznámky:"
           }
         },
         "de" : {
@@ -4943,6 +5315,12 @@
             "value" : "Table View Cell"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buňka náhledu tabulky"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5039,6 +5417,12 @@
             "value" : "استبدالات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Záměny"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5130,6 +5514,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "solarized-dark"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "solarized-dark"
@@ -5231,6 +5621,12 @@
             "value" : "Port:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Port:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5321,16 +5717,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"2/23/11\"; ObjectID = \"9w3-fa-di3\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2/23/11"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "2/23/11"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "2/23/11"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -5343,6 +5823,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "نسخ/لصق الذكي"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inteligentní kopírování/vkládání"
           }
         },
         "de" : {
@@ -5441,6 +5927,12 @@
             "value" : "مترجمين:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Překladatelé"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5535,6 +6027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عبارة المرور:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přístupová fráze:"
           }
         },
         "de" : {
@@ -5633,6 +6131,12 @@
             "value" : "تغيير تاريخ الإنشاء"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Změnit datum vytvoření"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5727,6 +6231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "موقع قائمة الملاحظة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umístění seznamu poznámek:"
           }
         },
         "de" : {
@@ -5825,6 +6335,12 @@
             "value" : "خط الكود:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Písmo kódu:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5919,6 +6435,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حذف اجباري"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vynutit smazání"
           }
         },
         "de" : {
@@ -6017,6 +6539,12 @@
             "value" : "تصحيح الإملاء تلقائيًا"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaticky opravovat pravopis"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6108,6 +6636,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "empty log"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "empty log"
@@ -6209,6 +6743,12 @@
             "value" : "تصغير"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimalizovat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6303,6 +6843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اختصار البحث:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat:"
           }
         },
         "de" : {
@@ -6401,6 +6947,12 @@
             "value" : "Host:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hostitel:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6492,6 +7044,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "monokai-sublime"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "monokai-sublime"
@@ -6593,6 +7151,12 @@
             "value" : "تحميل واختبار البيانات الأولية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nahrát a otestovat úvodní data"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6687,6 +7251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Frameworks and dependencies:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frameworky a dependence:"
           }
         },
         "de" : {
@@ -6785,6 +7355,12 @@
             "value" : "المستودعات:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repozitáře:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6879,6 +7455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Git origin:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Origin:"
           }
         },
         "de" : {
@@ -6977,6 +7559,12 @@
             "value" : "تاريخ"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historie"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7073,6 +7661,12 @@
             "value" : "التنسيق: yyyyMMddHHmmss"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formát: yyyyMMddHHmmss"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7163,16 +7757,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"iCloud Drive\"; ObjectID = \"aX0-yU-aew\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iCloud Drive"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "iCloud Drive"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "iCloud Drive"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -7185,6 +7863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تعيين"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavit"
           }
         },
         "de" : {
@@ -7283,6 +7967,12 @@
             "value" : "القائمة الرئيسية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hlavní nabídka"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7379,6 +8069,12 @@
             "value" : "بحث او انشاء"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat / vytvořit"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7470,6 +8166,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".md"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : ".md"
@@ -7571,6 +8273,12 @@
             "value" : "/var/www/example.com"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/var/www/priklad.com"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7665,6 +8373,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تغيير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Změnit"
           }
         },
         "de" : {
@@ -7763,6 +8477,12 @@
             "value" : "خط الملاحظة:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Písmo poznámky:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7857,6 +8577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إظهار الأيقونة في شريط  الايقونات "
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit ikonu v Docku"
           }
         },
         "de" : {
@@ -7955,6 +8681,12 @@
             "value" : "التفضيلات ..."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Předvolby…"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8049,6 +8781,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الدقائق"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minut po celé"
           }
         },
         "de" : {
@@ -8147,6 +8885,12 @@
             "value" : "تحرك لأسفل في قائمة الملاحظات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posunout dolů v seznamu poznámek"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8241,6 +8985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "استخدم التحديد للبحث"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat výběr"
           }
         },
         "de" : {
@@ -8339,6 +9089,12 @@
             "value" : "انشر الملاحظات على:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zveřejnit poznámky na:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8433,6 +9189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "بدون علامات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neoznačené"
           }
         },
         "de" : {
@@ -8531,6 +9293,12 @@
             "value" : "التباعد في قائمة الملاحظات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozestup v seznamu poznámek:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8625,6 +9393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مجلد"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knihovna"
           }
         },
         "de" : {
@@ -8723,6 +9497,12 @@
             "value" : "التحولات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transformace"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8817,6 +9597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الموقع الرسمي"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oficiální stránka"
           }
         },
         "de" : {
@@ -8915,6 +9701,12 @@
             "value" : "UUID"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formát: UUID"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9009,6 +9801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عنوان ٦"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis 6"
           }
         },
         "de" : {
@@ -9107,6 +9905,12 @@
             "value" : "Remove"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odebrat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9201,6 +10005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تنسيق:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formát:"
           }
         },
         "de" : {
@@ -9299,6 +10109,12 @@
             "value" : "كبير"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velké"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9395,6 +10211,12 @@
             "value" : "نقل"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přesunout"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9486,6 +10308,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vs"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "vs"
@@ -9587,6 +10415,12 @@
             "value" : "روابط ذكية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inteligentní odkazy"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9681,6 +10515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عنوان ٢"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis ě"
           }
         },
         "de" : {
@@ -9779,6 +10619,12 @@
             "value" : "اجعله حروف صغيرة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Převést na malá písmena"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9873,6 +10719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تاريخ التعديل"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum změny"
           }
         },
         "de" : {
@@ -9971,6 +10823,12 @@
             "value" : "إخفاء / إظهار الشريط الجانبي\n"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt/zobrazit boční panel"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10065,6 +10923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "متوسط"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Střední"
           }
         },
         "de" : {
@@ -10163,6 +11027,12 @@
             "value" : "تحول اليسار"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posunout doleva"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10253,16 +11123,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"v2.9.0\"; ObjectID = \"dgD-xe-DVG\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "v2.9.0"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "v2.9.0"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "v2.9.0"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -10275,6 +11229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "no key"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bez klíče"
           }
         },
         "de" : {
@@ -10373,6 +11333,12 @@
             "value" : "Separate .git in project dir (except iCloud Drive)"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oddělený .git soubor ve složce projektu (kromě iCloud Drive)"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10467,6 +11433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "خادم مخصص"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vlastní server"
           }
         },
         "de" : {
@@ -10565,6 +11537,12 @@
             "value" : "تشفير المجلد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zašifrovat složku"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10659,6 +11637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تراجع"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odvolat akci"
           }
         },
         "de" : {
@@ -10757,6 +11741,12 @@
             "value" : "التهجئة والقواعد اللغوية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pravopis a gramatika"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10851,6 +11841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عنوان ٥"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis 5"
           }
         },
         "de" : {
@@ -10949,6 +11945,12 @@
             "value" : "كلمة المرور:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heslo:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11043,6 +12045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اللغة (تحتاج إلى إعادة تشغيل التطبيق):"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jazyk:"
           }
         },
         "de" : {
@@ -11141,6 +12149,12 @@
             "value" : "قائمة المهام"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Úkoly"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11235,6 +12249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SSH ترتيب:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SSH konfigurace:"
           }
         },
         "de" : {
@@ -11333,6 +12353,12 @@
             "value" : "عمل نسخة مكررة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplikovat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11429,6 +12455,12 @@
             "value" : "اخفاء التاريخ"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt datum"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11519,16 +12551,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Preview\"; ObjectID = \"EC3-YF-sGZ\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Náhled"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "Preview"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Предпросмотр"
+            "value" : ""
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -11541,6 +12657,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Path:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cesta:"
           }
         },
         "de" : {
@@ -11639,6 +12761,12 @@
             "value" : "مجموعة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavit"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11733,6 +12861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Text Cell"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buňka s textem"
           }
         },
         "de" : {
@@ -11831,6 +12965,12 @@
             "value" : "نص يتوسطه خط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přeškrtnuté"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11925,6 +13065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "معاينة الخط"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Náhled písma"
           }
         },
         "de" : {
@@ -12023,6 +13169,12 @@
             "value" : "الاصدار"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verze"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12117,6 +13269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تشفير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zašifrovat"
           }
         },
         "de" : {
@@ -12215,6 +13373,12 @@
             "value" : "تاريخ الانشاء"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum vytvoření"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12309,6 +13473,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "نافذة او شباك"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Okno"
           }
         },
         "de" : {
@@ -12407,6 +13577,12 @@
             "value" : "تصاعدي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vzestupně"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12501,6 +13677,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مساعدة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nápověda"
           }
         },
         "de" : {
@@ -12599,6 +13781,12 @@
             "value" : "فتح المجلد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit ve Finderu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12693,6 +13881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اخفاء المعاينة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt náhled textu"
           }
         },
         "de" : {
@@ -12791,6 +13985,12 @@
             "value" : "إظهار محتوى المجلدات المتداخلة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit obsah podsložek"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12887,6 +14087,12 @@
             "value" : "ضع خطًا تحت"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podtržené"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12978,6 +14184,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "zenburn"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "zenburn"
@@ -13079,6 +14291,12 @@
             "value" : "تبديلات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Záměny"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13173,6 +14391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حذف"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat"
           }
         },
         "de" : {
@@ -13271,6 +14495,12 @@
             "value" : "FSNotes مساعدة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nápověda pro FSNotes"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13365,6 +14595,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تصميم الأيقونات:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Design ikon:"
           }
         },
         "de" : {
@@ -13463,6 +14699,12 @@
             "value" : "ازالة التشفير"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odebrat šifrování"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13557,6 +14799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الخزن الافتراضي:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Výchozí úložiště"
           }
         },
         "de" : {
@@ -13655,6 +14903,12 @@
             "value" : "تقريب"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přiblížení"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13749,6 +15003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تغيير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Změnit"
           }
         },
         "de" : {
@@ -13847,6 +15107,12 @@
             "value" : "تسمية الملفات:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pojmenování souborů:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13941,6 +15207,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مصنوع من ❤️ في أوكرانيا 🇺🇦 "
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vytvořeno s ❤️ v Ukrajině 🇺🇦 "
           }
         },
         "de" : {
@@ -14039,6 +15311,12 @@
             "value" : "مجلد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knihovna"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14133,6 +15411,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تسمية المجلد"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejmenovat složku"
           }
         },
         "de" : {
@@ -14231,6 +15515,12 @@
             "value" : "القفل التلقائي للملاحظات المشفرة:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaticky zamykat šifrované poznámky:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14325,6 +15615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مسح العلامات المضمنة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detekovat značky v textu"
           }
         },
         "de" : {
@@ -14423,6 +15719,12 @@
             "value" : "tomorrow"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "zítra"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14517,6 +15819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حفظ اختصار الحافظة:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vytvořit ze schránky:"
           }
         },
         "de" : {
@@ -14615,6 +15923,12 @@
             "value" : "ثواني"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sekund"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14684,7 +15998,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "секнуды"
+            "value" : "секунды"
           }
         },
         "uk" : {
@@ -14709,6 +16023,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تاريخ التعديل"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum změny"
           }
         },
         "de" : {
@@ -14807,6 +16127,12 @@
             "value" : "الغاء"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zrušit"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14901,6 +16227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تنسيق"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formát"
           }
         },
         "de" : {
@@ -14999,6 +16331,12 @@
             "value" : "خادم FSNotes"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FSNotes server"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15095,6 +16433,12 @@
             "value" : "None Selected "
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nic nevybráno"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15186,6 +16530,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web:"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Web:"
@@ -15287,6 +16637,12 @@
             "value" : "عنوان ٤"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis 4"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15381,6 +16737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "فتح المجلد"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit ve Finderu"
           }
         },
         "de" : {
@@ -15479,6 +16841,12 @@
             "value" : "فتح المجلد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit ve Finderu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15573,6 +16941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "قفل جميع المشفرة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknout všechny šifrované"
           }
         },
         "de" : {
@@ -15671,6 +17045,12 @@
             "value" : "لصق"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vložit"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15761,16 +17141,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"FSNotes\"; ObjectID = \"gWb-su-EdI\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FSNotes"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "FSNotes"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "FSNotes"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -15783,6 +17247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "المكتبة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knihovna"
           }
         },
         "de" : {
@@ -15881,6 +17351,12 @@
             "value" : "داكن"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tmavý"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15967,98 +17443,104 @@
         }
       }
     },
-    "H2T-Wj-CfA.title" : {
-      "comment" : "Class = \"NSMenuItem\"; title = \"Archive\"; ObjectID = \"H2T-Wj-CfA\";",
-      "extractionState" : "stale",
+    "gYQ-MC-Xwt.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Zoom Out\"; ObjectID = \"gYQ-MC-Xwt\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ارشيف"
+            "value" : "تصغير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zmenšit"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Archiv"
+            "value" : "Verkleinern"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Archive"
+            "value" : "Zoom Out"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Archivo"
+            "value" : "Alejar"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Archive"
+            "value" : "Dézoomer"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ארכיון"
+            "value" : "להקטין את התצוגה"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Archivio"
+            "value" : "Ingrandimento"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アーカイブ"
+            "value" : "ズームアウト"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "아카이브"
+            "value" : "축소"
           }
         },
         "nl-NL" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Archief"
+            "value" : "Uitzoomen"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Arquivo"
+            "value" : "Reduzir"
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Arquivo"
+            "value" : "Reduzir"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Архив"
+            "value" : "Уменьшить"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Архів"
+            "value" : "Зменшити"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "存档"
+            "value" : "缩小"
           }
         }
       }
@@ -16071,6 +17553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عرض"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazení"
           }
         },
         "de" : {
@@ -16169,6 +17657,12 @@
             "value" : "اعادة الضبط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resetovat nastavení"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16263,6 +17757,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عرض التدقيق الإملائي والنحوي"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit pravopis a gramatiku"
           }
         },
         "de" : {
@@ -16361,6 +17861,12 @@
             "value" : "استبدال النص"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nahrazovat text"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16452,6 +17958,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".markdown"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : ".markdown"
@@ -16553,6 +18065,12 @@
             "value" : "افتح في نافذة جديدة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřít v novém okně"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16647,6 +18165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إعادة ضبط"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resetovat"
           }
         },
         "de" : {
@@ -16745,6 +18269,12 @@
             "value" : "بحث وانشاء"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat a vytvořit"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16839,6 +18369,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اقتباسات ذكية"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inteligentní uvozovky"
           }
         },
         "de" : {
@@ -16937,6 +18473,12 @@
             "value" : "ويكيلينكس"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WikiLinks"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17031,6 +18573,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تحرك لأعلى في قائمة الملاحظات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posunout nahoru v seznamu poznámek"
           }
         },
         "de" : {
@@ -17129,6 +18677,12 @@
             "value" : "عرض"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazení"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17223,6 +18777,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "فحص المستند الآن"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zkontrolovat dokument"
           }
         },
         "de" : {
@@ -17321,6 +18881,12 @@
             "value" : "الخدمات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Služby"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17417,6 +18983,12 @@
             "value" : "الملهملات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koš"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17505,12 +19077,18 @@
     },
     "Icf-3C-atz.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Preview CSS:\"; ObjectID = \"Icf-3C-atz\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "ar-IQ" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "معاينة Markdown CSS "
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Náhled CSS:"
           }
         },
         "de" : {
@@ -17609,6 +19187,12 @@
             "value" : "الوارد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Příchozí"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17703,6 +19287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تخزين النسخ الاحتياطي"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zálohovat nyní"
           }
         },
         "de" : {
@@ -17801,6 +19391,12 @@
             "value" : "قفل عند تفعيل شاشة التوقف"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknout při spořiči obrazovky"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17895,6 +19491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كلمة المرور الجديدة:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nové heslo:"
           }
         },
         "de" : {
@@ -17993,6 +19595,12 @@
             "value" : "تلميحة :"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nápověda:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18087,6 +19695,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تحول اليمين"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posunout doprava"
           }
         },
         "de" : {
@@ -18185,6 +19799,12 @@
             "value" : "no key"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bez klíče"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18276,6 +19896,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FSNotes"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "FSNotes"
@@ -18377,6 +20003,12 @@
             "value" : "تباعد الاسطر"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozestup řádků:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18471,6 +20103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "التنسيق: Untitled Note"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formát: Poznámka bez názvu"
           }
         },
         "de" : {
@@ -18569,6 +20207,12 @@
             "value" : "عرض الخط:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Šířka textu:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18663,6 +20307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مخصص"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vlastní"
           }
         },
         "de" : {
@@ -18761,6 +20411,12 @@
             "value" : "دبوس / إلغاء التثبيت"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připnout/odepnout"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18857,6 +20513,12 @@
             "value" : "اعادة تسمية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejmenovat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18947,16 +20609,100 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"🔗fsnotes/contributors\"; ObjectID = \"jQ1-6K-9ar\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔗fsnotes/contributors"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "🔗fsnotes/contributors"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🔗fsnotes/contributors"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -18969,6 +20715,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الرؤية:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viditelnost:"
           }
         },
         "de" : {
@@ -19067,6 +20819,12 @@
             "value" : "عنوان ١"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis 1"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19161,6 +20919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تعيين"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavit"
           }
         },
         "de" : {
@@ -19259,6 +21023,12 @@
             "value" : "تنسيق"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formát"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19353,6 +21123,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اعلى"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nahoře"
           }
         },
         "de" : {
@@ -19451,6 +21227,12 @@
             "value" : "حذف صفحة الويب"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat webovou stránku"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19545,6 +21327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مائل"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurzíva"
           }
         },
         "de" : {
@@ -19643,6 +21431,12 @@
             "value" : "كلمة المرور:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heslo:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19739,6 +21533,12 @@
             "value" : "استخدم اول سطر كعنوان"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Použít první řádek jako nadpis"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19830,6 +21630,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://soulver.com"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "https://soulver.com"
@@ -19931,6 +21737,12 @@
             "value" : "عرض الكل"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit vše"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -20025,6 +21837,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "فقل/فتح الفقل"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknout/odemknout"
           }
         },
         "de" : {
@@ -20123,6 +21941,12 @@
             "value" : "اغلاق"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavřít"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -20219,6 +22043,12 @@
             "value" : "معاينة MathJax "
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Náhled MathJax"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -20309,16 +22139,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"1\"; ObjectID = \"kqJ-Fr-EeB\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "1"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -20331,6 +22245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "السماح لبصمة الاصبع لفتح الملاحظات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Povolit Touch ID pro odemykání poznámek"
           }
         },
         "de" : {
@@ -20424,6 +22344,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SoulverCore – "
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "SoulverCore – "
@@ -20525,6 +22451,12 @@
             "value" : "Custom worktree"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vlastní worktree"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -20621,6 +22553,12 @@
             "value" : "Origin للمشروع الرئيسي:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Origin pro hlavní projekt:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -20707,6 +22645,24 @@
         }
       }
     },
+    "l75-ic-hjm.title" : {
+      "comment" : "Class = \"NSBox\"; title = \"Box\"; ObjectID = \"l75-ic-hjm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Box"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Box"
+          }
+        }
+      }
+    },
     "ldu-U8-PD1.title" : {
       "comment" : "Class = \"NSWindow\"; title = \"Preferences\"; ObjectID = \"ldu-U8-PD1\";",
       "extractionState" : "extracted_with_value",
@@ -20715,6 +22671,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "التفضيلات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Předvolby"
           }
         },
         "de" : {
@@ -20803,6 +22765,108 @@
         }
       }
     },
+    "LFw-De-3DP.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Actual Size\"; ObjectID = \"LFw-De-3DP\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحجم الأصلي"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skutečná velikost"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tatsächliche Größe"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Actual Size"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamaño real"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taille réelle"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גודל אמיתי"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dimensione reale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "実寸"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "실제 크기"
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Werkelijke grootte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamanho real"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamanho real"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фактический размер"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фактичний розмір"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "实际尺寸"
+          }
+        }
+      }
+    },
     "lhy-wX-Q4T.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Reset:\"; ObjectID = \"lhy-wX-Q4T\";",
       "extractionState" : "extracted_with_value",
@@ -20811,6 +22875,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إعادة ضبط:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resetovat:"
           }
         },
         "de" : {
@@ -20909,6 +22979,12 @@
             "value" : "عنوان ٣"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis 3"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21003,6 +23079,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عنوان"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis"
           }
         },
         "de" : {
@@ -21101,6 +23183,12 @@
             "value" : "عرض الصور:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Šířka obrázků:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21195,6 +23283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "سميك"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tučné"
           }
         },
         "de" : {
@@ -21293,6 +23387,12 @@
             "value" : "Private key"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soukromý klíč"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21387,6 +23487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إخفاء FSNotes عند تفعيل تطبيق آخر"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt FSNotes při aktivaci jiné aplikace"
           }
         },
         "de" : {
@@ -21485,6 +23591,12 @@
             "value" : "حزمة النص"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TextBundle"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21576,6 +23688,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "atom-one-light"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "atom-one-light"
@@ -21677,6 +23795,12 @@
             "value" : "4 Spaces"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4 mezery"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21771,6 +23895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تحقق من القواعد مع التدقيق الإملائي\n"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrolovat gramatiku a pravopis"
           }
         },
         "de" : {
@@ -21869,6 +23999,12 @@
             "value" : "نافذة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Okno"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21963,6 +24099,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "https://example.com/"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://priklad.com/"
           }
         },
         "de" : {
@@ -22061,6 +24203,12 @@
             "value" : "متقدمة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokročilé"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -22155,6 +24303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الحاوية:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontejner:"
           }
         },
         "de" : {
@@ -22253,6 +24407,12 @@
             "value" : "تبديل Todo"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přepnout úkol"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -22347,6 +24507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preview Soulver Calculator"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Náhled kalkulačky Soulver"
           }
         },
         "de" : {
@@ -22445,6 +24611,12 @@
             "value" : "Clickable links"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klikatelné odkazy"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -22539,6 +24711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تغيير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Změnit"
           }
         },
         "de" : {
@@ -22637,6 +24815,12 @@
             "value" : "عبارة المرور:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přístupová fráze:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -22731,6 +24915,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tab"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tabulátor"
           }
         },
         "de" : {
@@ -22829,6 +25019,12 @@
             "value" : "طباعة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tisknout"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -22920,6 +25116,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Web"
@@ -23021,6 +25223,12 @@
             "value" : "حفظ المراجعة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uložit úpravy"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23115,6 +25323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عام"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obecné"
           }
         },
         "de" : {
@@ -23213,6 +25427,12 @@
             "value" : "خلية نصية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buňka s textem"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23307,6 +25527,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الخدمات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Služby"
           }
         },
         "de" : {
@@ -23405,6 +25631,12 @@
             "value" : "بصمة الاصبع:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touch ID:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23491,6 +25723,108 @@
         }
       }
     },
+    "NZK-ki-p6Z.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Zoom In\"; ObjectID = \"NZK-ki-p6Z\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تكبير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zvětšit"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einzoomen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Zoom In"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acercar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agrandir"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לְהִתְמַקֵד"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrandisci"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拡大表示"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "줌인"
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inzoomen"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aumentar"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ampliar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Увеличить"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Збільшити"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "放大"
+          }
+        }
+      }
+    },
     "o2f-1e-Dvp.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Reset\"; ObjectID = \"o2f-1e-Dvp\";",
       "extractionState" : "extracted_with_value",
@@ -23499,6 +25833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reset"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resetovat"
           }
         },
         "de" : {
@@ -23597,6 +25937,12 @@
             "value" : "اظهار فيTerminal"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit v Terminálu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23691,6 +26037,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حفظ المراجعة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uložit úpravy"
           }
         },
         "de" : {
@@ -23789,6 +26141,12 @@
             "value" : "استيراد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importovat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23883,6 +26241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إظهار في الشريط الجانبي"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit v bočním panelu"
           }
         },
         "de" : {
@@ -23981,6 +26345,12 @@
             "value" : "العنوان"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nadpis"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24071,16 +26441,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"5\"; ObjectID = \"oeL-rE-fXz\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "5"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "5"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -24093,6 +26547,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "لا شيء (استخدام الإعدادات العامة)"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádné (použít globální nastavení)"
           }
         },
         "de" : {
@@ -24191,6 +26651,12 @@
             "value" : "إنشاء صفحة ويب"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vytvořit webovou stránku"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24285,6 +26751,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اخفاء FSNotes"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt FSNotes"
           }
         },
         "de" : {
@@ -24383,6 +26855,12 @@
             "value" : "الاكواد البرمجية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blok kódu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24477,6 +26955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إلى الأمام"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vpřed"
           }
         },
         "de" : {
@@ -24575,6 +27059,12 @@
             "value" : "طباعة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tisknout"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24669,6 +27159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "البحث السابق"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat předchozí"
           }
         },
         "de" : {
@@ -24767,6 +27263,12 @@
             "value" : "ايقاف التحدث"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zastavit předčítání"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24861,6 +27363,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "نسق"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozložení"
           }
         },
         "de" : {
@@ -24959,6 +27467,12 @@
             "value" : "مسافة بادئة باستخدام:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odsazovat pomocí:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -25053,6 +27567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "لقطات تلقائية:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatické snímky:"
           }
         },
         "de" : {
@@ -25151,6 +27671,12 @@
             "value" : "حذف"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -25245,6 +27771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تبديل معاينة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přepnout náhled"
           }
         },
         "de" : {
@@ -25343,6 +27875,12 @@
             "value" : "git@github.com:glushchenko/example.git"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "git@github.com:glushchenko/priklad.git"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -25437,6 +27975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اعد كتابة كلمة المرور:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zopakujte heslo:"
           }
         },
         "de" : {
@@ -25535,6 +28079,12 @@
             "value" : "نسخة مكررة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplikovat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -25629,6 +28179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الخلفية:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pozadí:"
           }
         },
         "de" : {
@@ -25727,6 +28283,12 @@
             "value" : "تخزين النسخ الاحتياطي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zálohovat nyní"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -25821,6 +28383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الحماية"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zabezpečení"
           }
         },
         "de" : {
@@ -25919,6 +28487,12 @@
             "value" : "تاريخ الانشاء"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum vytvoření"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26013,6 +28587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حذف صفحة الويب"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat webovou stránku"
           }
         },
         "de" : {
@@ -26111,6 +28691,12 @@
             "value" : "جانب"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strana"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26205,6 +28791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "بحث عن التالي"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat další"
           }
         },
         "de" : {
@@ -26303,6 +28895,12 @@
             "value" : "تبليغ عن خطأ برمجي او  طلب ميزة جديدة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohlásit chyby nebo návrhy pro zlěpšení"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26397,6 +28995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تغيير تاريخ الإنشاء"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Změnit datum vytvoření"
           }
         },
         "de" : {
@@ -26495,6 +29099,12 @@
             "value" : "أو استخدم المفتاح الخاص .ssh (موصى به):"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Git repozitář:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26589,6 +29199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Format: yyyy-MM-dd hh.mm.ss a"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formát: yyyy-MM-dd hh.mm.ss a"
           }
         },
         "de" : {
@@ -26687,6 +29303,12 @@
             "value" : "عودة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zpět"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26777,16 +29399,100 @@
       "comment" : "Class = \"NSWindow\"; title = \"Window\"; ObjectID = \"qod-hp-9wd\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Okno"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "Window"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Window"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -26799,6 +29505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عرض الاعدادات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit možnosti"
           }
         },
         "de" : {
@@ -26889,12 +29601,18 @@
     },
     "qwS-gG-am3.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Open in Finder\"; ObjectID = \"qwS-gG-am3\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "ar-IQ" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open in Finder"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřít ve Finderu"
           }
         },
         "de" : {
@@ -26993,6 +29711,12 @@
             "value" : "اتجاه:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Směr:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27087,6 +29811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "النافذة الرئيسية"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hlavní okno"
           }
         },
         "de" : {
@@ -27185,6 +29915,12 @@
             "value" : "التركيز في المحرر عند اختيار المذكرة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Při výběru poznámky přepnout do editoru"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27279,6 +30015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حجم الهامش:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velikost okrajů:"
           }
         },
         "de" : {
@@ -27377,6 +30119,12 @@
             "value" : "تحقق من التدقيق الإملائي أثناء الكتابة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrolovat pravopis během psaní"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27471,6 +30219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إعادة ضبط"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resetovat"
           }
         },
         "de" : {
@@ -27569,6 +30323,12 @@
             "value" : "الملهملات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koš"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27663,6 +30423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "نسخ  URL"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopírovat URL"
           }
         },
         "de" : {
@@ -27761,6 +30527,12 @@
             "value" : "شرطات ذكية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inteligentní pomlčky"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27855,6 +30627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ترتيب حسب"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Řadit podle"
           }
         },
         "de" : {
@@ -27953,6 +30731,12 @@
             "value" : "Clone"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klonovat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28044,6 +30828,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "atom-one-dark"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "atom-one-dark"
@@ -28145,6 +30935,12 @@
             "value" : "فقل/فتح الفقل"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknout/odemknout"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28239,6 +31035,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "النظام"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systém"
           }
         },
         "de" : {
@@ -28337,6 +31139,12 @@
             "value" : "Text Cell"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buňka s textem"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28431,6 +31239,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حذف المجلد"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat složku"
           }
         },
         "de" : {
@@ -28529,6 +31343,12 @@
             "value" : "تحديد الكل"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vybrat vše"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28623,6 +31443,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حذف المجلد"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat složku"
           }
         },
         "de" : {
@@ -28721,6 +31547,12 @@
             "value" : "فتح المجلد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit ve Finderu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28815,6 +31647,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "passphrase"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "přístupová fráze"
           }
         },
         "de" : {
@@ -28913,6 +31751,12 @@
             "value" : "الانتقال الى المحدد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přeskočit na výběr"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29007,6 +31851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "أحضر الكل إلى الأمام"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Převést vše do popředí"
           }
         },
         "de" : {
@@ -29105,6 +31955,12 @@
             "value" : "ارفاق تخزين..."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat externí složku"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29199,6 +32055,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "النسخ الاحتياطي كل"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commit/push každých"
           }
         },
         "de" : {
@@ -29297,6 +32159,12 @@
             "value" : "قائمة الملاحظات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seznam poznámek:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29391,6 +32259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تحرك لأعلى في الشريط الجانبي"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posunout nahoru v bočním panelu"
           }
         },
         "de" : {
@@ -29489,6 +32363,12 @@
             "value" : "نافذة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Okno"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29583,6 +32463,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إعادة تعيين ذاكرة التخزين المؤقت"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyprázdnit cache"
           }
         },
         "de" : {
@@ -29681,6 +32567,12 @@
             "value" : "ملف"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soubor"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29775,6 +32667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Text Cell"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buňka s textem"
           }
         },
         "de" : {
@@ -29873,6 +32771,12 @@
             "value" : "كود الخط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Písmo kódu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29969,6 +32873,12 @@
             "value" : "تاريخ"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historie"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30060,6 +32970,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "solarized-light"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "solarized-light"
@@ -30161,6 +33077,12 @@
             "value" : "مجلد جديد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vytvořit složku"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30255,6 +33177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "المحرر"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editor"
           }
         },
         "de" : {
@@ -30353,6 +33281,12 @@
             "value" : "عرض الايقونة في شريط القوائم"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit ikonu v řádku nabídek"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30443,16 +33377,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Dylan Seeger — https://www.lovably.com\\nOlena Hlushcneko\"; ObjectID = \"sWS-bo-99f\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dylan Seeger — https://www.lovably.com\nOlena Hlushcneko"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "Dylan Seeger — https://www.lovably.com\nOlena Hlushcneko"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dylan Seeger — https://www.lovably.com\nOlena Hlushcneko"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -30465,6 +33483,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حل تعارضات iCloud Drive تلقائيًا"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatické řešení konfliktů na iCloud Drive"
           }
         },
         "de" : {
@@ -30563,6 +33587,12 @@
             "value" : "تسمية المجلد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejmenovat složku"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30657,6 +33687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "عرض الاعدادات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit možnosti"
           }
         },
         "de" : {
@@ -30755,6 +33791,12 @@
             "value" : "تنازلي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sestupně"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30846,6 +33888,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".txt"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : ".txt"
@@ -30947,6 +33995,12 @@
             "value" : "مظهر خارجي:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vzhled:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31041,6 +34095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حذف"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat"
           }
         },
         "de" : {
@@ -31139,6 +34199,12 @@
             "value" : "In memory of Mars. ? - 25.08.2022"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Věnování: Mars. ?–25.08.2022"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31233,6 +34299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اول سطر كعنوان"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "První řádek jako nadpis"
           }
         },
         "de" : {
@@ -31331,6 +34403,12 @@
             "value" : "التفضيلات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Předvolby"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31425,6 +34503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كاشفات البيانات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detektory dat"
           }
         },
         "de" : {
@@ -31523,6 +34607,12 @@
             "value" : "Pull every"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pull každých"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31617,6 +34707,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "افتح في نافذة جديدة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřít v novém okně"
           }
         },
         "de" : {
@@ -31715,6 +34811,12 @@
             "value" : "Label"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Štítek"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31809,6 +34911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تكبير"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velká počáteční písmena"
           }
         },
         "de" : {
@@ -31907,6 +35015,12 @@
             "value" : "مشمس"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Světlý"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31998,6 +35112,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "22"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "22"
@@ -32099,6 +35219,12 @@
             "value" : "امتداد الرمز"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Úsek kódu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32193,6 +35319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ملف"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soubor"
           }
         },
         "de" : {
@@ -32291,6 +35423,12 @@
             "value" : "نسخ URL"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopírovat URL"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32382,6 +35520,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FSNotes"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "FSNotes"
@@ -32483,6 +35627,12 @@
             "value" : "قص"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyjmout"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32574,6 +35724,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "github"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "github"
@@ -32675,6 +35831,12 @@
             "value" : "empty log"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "empty log"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32769,6 +35931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إخفاء الآخرين"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt ostatní"
           }
         },
         "de" : {
@@ -32867,6 +36035,12 @@
             "value" : "غلق عند النوم"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknout při uspání"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32961,6 +36135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "أو استخدم المفتاح الخاص .ssh:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nebo použijte soukromý .ssh klíč:"
           }
         },
         "de" : {
@@ -33059,6 +36239,12 @@
             "value" : "Ask commit message on note save"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ptát se na popisek commitu při uložení poznámky"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33153,6 +36339,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "جعله حروف كبيرة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Převést na velká písmena"
           }
         },
         "de" : {
@@ -33251,6 +36443,12 @@
             "value" : "تحرك لأسفل في الشريط الجانبي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posunout dolů v bočním panelu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33345,6 +36543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toggle Container"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapnout/vypnout kontejner"
           }
         },
         "de" : {
@@ -33443,6 +36647,12 @@
             "value" : "ركز على شريط البحث عند الضغط على ESC"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stisknutím Esc přepnout do vyhledávání"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33537,6 +36747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إنشاء صفحة ويب"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vytvořit webovou stránku"
           }
         },
         "de" : {
@@ -33635,6 +36851,12 @@
             "value" : "قفل المجلد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamknout složku"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33729,6 +36951,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تعديل"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Úpravy"
           }
         },
         "de" : {
@@ -33827,6 +37055,12 @@
             "value" : "اختياري"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nepovinné"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33921,6 +37155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "~/.ssh/id_rsa"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "id_rsa klíč není vybraný"
           }
         },
         "de" : {
@@ -34019,6 +37259,12 @@
             "value" : "لصق ومطابقة النمط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vložit a použít styl"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34113,6 +37359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "معاينة حية للصور"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Živý náhled obrázků"
           }
         },
         "de" : {
@@ -34211,6 +37463,12 @@
             "value" : "إخفاء / إظهار قائمة الملاحظات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt/zobrazit seznam poznámek"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34305,6 +37563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مساعدة"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nápověda"
           }
         },
         "de" : {
@@ -34403,6 +37667,12 @@
             "value" : "Passphrase:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přístupová fráze:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34499,6 +37769,12 @@
             "value" : "إعادة تسمية تلقائية بالعنوان"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podle nadpisu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34590,6 +37866,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Git"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Git"
@@ -34691,6 +37973,12 @@
             "value" : "اقتبس"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Citát"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34785,6 +38073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "نسخ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopírovat"
           }
         },
         "de" : {
@@ -34883,6 +38177,12 @@
             "value" : "ينشر"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zveřejnit"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34977,6 +38277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اعادة تسمية"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přejmenovat"
           }
         },
         "de" : {
@@ -35075,6 +38381,12 @@
             "value" : "إعادة ضبط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resetovat"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -35169,6 +38481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "رابط"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odkaz"
           }
         },
         "de" : {
@@ -35267,6 +38585,12 @@
             "value" : "إظهار في الشريط الجانبي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit v bočním panelu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -35361,6 +38685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "معاينة حجم الخط:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veilkost písma v náhledu:"
           }
         },
         "de" : {
@@ -35459,6 +38789,12 @@
             "value" : "تاريخ"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historie"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -35550,6 +38886,12 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "agate"
+          }
+        },
+        "cs" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "agate"
@@ -35651,6 +38993,12 @@
             "value" : "ملاحظات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poznámky"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -35737,6 +39085,24 @@
         }
       }
     },
+    "xRe-j4-nd1.title" : {
+      "comment" : "Class = \"NSBox\"; title = \"Box\"; ObjectID = \"xRe-j4-nd1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Box"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Box"
+          }
+        }
+      }
+    },
     "xrE-MZ-jX0.title" : {
       "comment" : "Class = \"NSMenuItem\"; title = \"Speech\"; ObjectID = \"xrE-MZ-jX0\";",
       "extractionState" : "extracted_with_value",
@@ -35745,6 +39111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كلام"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Řeč"
           }
         },
         "de" : {
@@ -35843,6 +39215,12 @@
             "value" : "فتح المجلد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit ve Finderu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -35937,6 +39315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اختياري"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nepovinné"
           }
         },
         "de" : {
@@ -36035,6 +39419,12 @@
             "value" : "تسليط الضوء على كتلة التعليمات البرمجية (إعادة تشغيل التطبيق مطلوب)"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Živé zvýraznění u bloku kódu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36129,6 +39519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "بلا"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Žádné"
           }
         },
         "de" : {
@@ -36227,6 +39623,12 @@
             "value" : "passphrase"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "přístupová fráze"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36321,6 +39723,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ابحث ..."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat…"
           }
         },
         "de" : {
@@ -36419,6 +39827,12 @@
             "value" : "Toggle Container"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapnout/vypnout kontejner"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36509,16 +39923,100 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Name\"; ObjectID = \"y7T-Rc-etT\"; Note = \"#bc-ignore!\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "ar-IQ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "jméno"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "Name"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl-NL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Имя"
+            "value" : ""
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -36531,6 +40029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Git repository"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Git repozitář"
           }
         },
         "de" : {
@@ -36629,6 +40133,12 @@
             "value" : "بحث واستبدال ..."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat a nahradit…"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36723,6 +40233,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ملاحظة سريعة:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rychlá poznámka:"
           }
         },
         "de" : {
@@ -36821,6 +40337,12 @@
             "value" : "بدء التحدث"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spustit předčítání"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36915,6 +40437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تثبيت / فك التثبيت"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připnout/odepnout"
           }
         },
         "de" : {
@@ -37013,6 +40541,12 @@
             "value" : "إدراج تلقائي لغلق الاقواس والاقتباسات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaticky zavírat závorky a uvozovky"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37107,6 +40641,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "اسم المستخدم:"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uživatelské jméno:"
           }
         },
         "de" : {
@@ -37205,6 +40745,12 @@
             "value" : "صورة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obrázek nebo soubor"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37299,6 +40845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مشاهدة التبديلات"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit záměny"
           }
         },
         "de" : {
@@ -37397,6 +40949,12 @@
             "value" : "فتح في محرر خارجي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otevřít v externím editoru:"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37491,6 +41049,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حذف اجباري"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vynutit smazání"
           }
         },
         "de" : {
@@ -37589,6 +41153,12 @@
             "value" : "3"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37683,6 +41253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "قم بعمل نسخة احتياطية يدويًا"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zálohovat ručně"
           }
         },
         "de" : {
@@ -37781,6 +41357,12 @@
             "value" : "Table View Cell"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buňka náhledu tabulky"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37877,6 +41459,12 @@
             "value" : "لاحظ التحديد التلقائي عند مطابقة النص الأساسي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaticky vybrat poznámku při shodě textu"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37971,6 +41559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إظهار الملاحظات في قائمة \"ملاحظات\" و \"قائمة المهام\""
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit poznámky v seznamech „Poznámky“ a „Úkoly“"
           }
         },
         "de" : {

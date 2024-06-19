@@ -24,6 +24,11 @@ class SidebarCellView: NSTableCellView {
         let dst = project.url.deletingLastPathComponent().appendingPathComponent(sender.stringValue, isDirectory: true)
 
         do {
+            if FileManager.default.fileExists(atPath: dst.path) {
+                sender.stringValue = project.url.lastPathComponent
+                return
+            }
+
             try FileManager.default.moveItem(at: src, to: dst)
         } catch {
             sender.stringValue = project.url.lastPathComponent
@@ -31,28 +36,5 @@ class SidebarCellView: NSTableCellView {
             alert.messageText = error.localizedDescription
             alert.runModal()
         }
-    }
-
-    override var backgroundStyle: NSView.BackgroundStyle {
-        set {
-            guard let rowView = self.superview as? NSTableRowView else { return }
-            
-            if !rowView.isSelected {
-                icon.image = type?.getIcon()
-            }
-
-            if window?.firstResponder == superview?.superview {
-                applySelectedFirstResponder()
-            } else {
-                icon.image = type?.getIcon()
-            }
-        }
-        get {
-            return super.backgroundStyle;
-        }
-    }
-
-    public func applySelectedFirstResponder() {
-        icon.image = type?.getIcon(white: true)
     }
 }

@@ -10,6 +10,7 @@ import Foundation
 
 public struct NoteMeta: Codable {
     var url: URL
+    var attachments: [URL]?
     var imageUrl: [URL]?
     var title: String
     var preview: String
@@ -17,4 +18,5 @@ public struct NoteMeta: Codable {
     var creationDate: Date
     var pinned: Bool
     var tags: [String]
+    var selectedRange: NSRange?
 }

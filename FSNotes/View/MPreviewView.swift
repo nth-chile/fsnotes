@@ -36,6 +36,7 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
         userContentController.add(HandlerMouse(), name: "mouse")
         userContentController.add(HandlerClipboard(), name: "clipboard")
         userContentController.add(HandlerOpen(), name: "open")
+        userContentController.add(HandlerQuickLook(), name: "quicklook")
 
         let configuration = WKWebViewConfiguration()
         configuration.userContentController = userContentController
@@ -157,6 +158,63 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
         }
     }
 
+    public static func loadAttachments(html: String, note: Note, showButton: Bool = true) -> String {
+        guard let urls = note.attachments, urls.count > 0  else { return html }
+
+        var htmlString = html
+        var imagesStorage = note.project.url
+
+        if note.isTextBundle() {
+            imagesStorage = note.getURL()
+        }
+
+        do {
+            let regex = try NSRegularExpression(pattern: "<img.*?src=\"([^\"]*)\"")
+            let results = regex.matches(in: html, range: NSRange(html.startIndex..., in: html))
+
+            let images = results.map {
+                String(html[Range($0.range, in: html)!])
+            }
+
+            for image in images {
+                let localPath = image.replacingOccurrences(of: "<img src=\"", with: "").dropLast()
+
+                guard !localPath.starts(with: "http://") && !localPath.starts(with: "https://") else { continue }
+
+                let localPathClean = localPath.removingPercentEncoding ?? String(localPath)
+                let fullImageURL = imagesStorage
+                let imageURL = fullImageURL.appendingPathComponent(localPathClean)
+
+                guard !imageURL.isImage && !imageURL.isVideo else { continue }
+
+                #if os(iOS)
+                let editor = UIApplication.getEVC().editArea
+                #else
+                let editor = ViewController.shared()?.editor
+                #endif
+
+                if let editor = editor {
+                    let attachment = NoteAttachment(editor: editor, title: "", path: "", url: imageURL, note: note)
+
+                    if let imageData = attachment.getAttachmentImage()?.jpgData {
+                        let base64 = imageData.base64EncodedString()
+                        var imPath = "<img class=\"attachment\" data-url=\"" + imageURL.path + "\" src=\"" + "data:image;base64," + base64 + "\""
+
+                        if !showButton {
+                            imPath = "<img "
+                        }
+
+                        htmlString = htmlString.replacingOccurrences(of: image, with: imPath)
+                    }
+                }
+            }
+        } catch let error {
+            print("Images regex: \(error.localizedDescription)")
+        }
+
+        return htmlString
+    }
+
     public func load(note: Note, force: Bool = false) {
         /// Do not re-load already loaded view
         guard self.note != note || force else { return }
@@ -178,8 +236,9 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
                 loadFileURL(i, allowingReadAccessTo: accessURL)
             }
         } else {
-            let htmlString = renderMarkdownHTML(markdown: markdownString)!
-            
+            var htmlString = renderMarkdownHTML(markdown: markdownString)!
+            htmlString = MPreviewView.loadAttachments(html: htmlString, note: note)
+
             if let pageHTMLString = try? MPreviewView.htmlFromTemplate(htmlString),
                let baseURL = Bundle.main.url(forResource: "MPreview", withExtension: "bundle") {
                 loadHTMLString(pageHTMLString, baseURL: baseURL)
@@ -221,33 +280,40 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
     private func isFootNotes(url: URL) -> Bool {
         let link = url.absoluteString.components(separatedBy: "/index.html#")
         if link.count == 2 {
-            let anchor = link[1]
+            openAnchor(anchor: link[1])
+            return true
+        }
 
-            evaluateJavaScript("document.getElementById('\(anchor)').offsetTop") { [weak self] (result, error) in
-                if let offset = result as? CGFloat {
-                    self?.evaluateJavaScript("window.scrollTo(0,\(offset))", completionHandler: nil)
-                }
-            }
-
-            evaluateJavaScript("getElementsByText('\(anchor)')[0].offsetTop") { [weak self] (result, error) in
-                if let offset = result as? CGFloat {
-                    self?.evaluateJavaScript("window.scrollTo(0,\(offset))", completionHandler: nil)
-                }
-            }
-            
-            let textQuery = anchor.replacingOccurrences(of: "-", with: " ")
-            evaluateJavaScript("getElementsByTextContent('\(textQuery)').offsetTop") { [weak self] (result, error) in
-                if let offset = result as? CGFloat {
-                    self?.evaluateJavaScript("window.scrollTo(0,\(offset))", completionHandler: nil)
-                }
-            }
-
+        let bundleLink = url.absoluteString.components(separatedBy: "/MPreview.bundle/#")
+        if bundleLink.count == 2 {
+            openAnchor(anchor: bundleLink[1])
             return true
         }
 
         return false
     }
-    
+
+    private func openAnchor(anchor: String) {
+        evaluateJavaScript("document.getElementById('\(anchor)').offsetTop") { [weak self] (result, error) in
+            if let offset = result as? CGFloat {
+                self?.evaluateJavaScript("window.scrollTo(0,\(offset))", completionHandler: nil)
+            }
+        }
+
+        evaluateJavaScript("getElementsByText('\(anchor)')[0].offsetTop") { [weak self] (result, error) in
+            if let offset = result as? CGFloat {
+                self?.evaluateJavaScript("window.scrollTo(0,\(offset))", completionHandler: nil)
+            }
+        }
+
+        let textQuery = anchor.replacingOccurrences(of: "-", with: " ")
+        evaluateJavaScript("getElementsByTextContent('\(textQuery)').offsetTop") { [weak self] (result, error) in
+            if let offset = result as? CGFloat {
+                self?.evaluateJavaScript("window.scrollTo(0,\(offset))", completionHandler: nil)
+            }
+        }
+    }
+
     public static func buildPage(for note: Note, at dst: URL, web: Bool = false, print: Bool = false) -> URL? {
         var markdownString = note.getPrettifiedContent()
         
@@ -287,10 +353,14 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
             }
         }
         
+
+        let state = !(web || print)
+        htmlString = MPreviewView.loadAttachments(html: htmlString, note: note, showButton: state)
+
         if let urls = note.imageUrl, urls.count > 0, !print {
             htmlString = MPreviewView.loadImages(imagesStorage: imagesStorage, html: htmlString, at: dst, web: web)
         }
-        
+
         if let pageHTMLString = try? htmlFromTemplate(htmlString, webPath: webPath, print: print, archivePath: zipName, note: note) {
             let indexURL = createTemporaryBundle(pageHTMLString: pageHTMLString, at: dst)
             
@@ -307,12 +377,6 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
 
         guard let bundleResourceURL = bundle?.resourceURL else { return nil }
 
-        var customCSS: URL? = UserDefaultsManagement.markdownPreviewCSS
-        
-        #if os(iOS)
-            customCSS = nil
-        #endif
-
         let webkitPreview = at
         try? FileManager.default.createDirectory(at: webkitPreview, withIntermediateDirectories: true, attributes: nil)
 
@@ -325,10 +389,6 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
             do {
                 let fileList = try FileManager.default.contentsOfDirectory(atPath: bundleResourceURL.path)
                 for file in fileList {
-                    if customCSS != nil && file == "css" {
-                        continue
-                    }
-
                     let tmpURL = webkitPreview.appendingPathComponent(file)
 
                     if ["css", "js"].contains(file) {
@@ -340,12 +400,6 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
             } catch {
                 print(error)
             }
-        }
-
-        if let customCSS = customCSS {
-            let styleDst = webkitPreview.appendingPathComponent("main.css", isDirectory: false)
-            try? FileManager.default.removeItem(at: styleDst)
-            try? FileManager.default.copyItem(at: customCSS, to: styleDst)
         }
 
         // Write generated index.html to temporary location.
@@ -376,6 +430,8 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
 
                 let fullImageURL = imagesStorage
                 let imageURL = fullImageURL.appendingPathComponent(localPathClean)
+
+                guard imageURL.isImage else { continue }
 
                 let webkitPreview = at
 
@@ -593,13 +649,7 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
             fullScreen = true
             useFixedImageHeight = false
         }
-        
-        if let cssURL = UserDefaultsManagement.markdownPreviewCSS {
-            if FileManager.default.fileExists(atPath: cssURL.path), let content = try? String(contentsOf: cssURL) {
-                css += content
-            }
-        }
-        
+
         css +=
             useFixedImageHeight
                 ? String("img { max-height: 90vh; }")
@@ -673,8 +723,9 @@ class MPreviewView: WKWebView, WKUIDelegate, WKNavigationDelegate {
         
             body {font: \(fontSize)px '\(familyName)', '-apple-system'; margin: 0 \(width + 5)px; -webkit-text-size-adjust: none;}
             code, pre {font: \(codeFontSize)px '\(codeFamilyName)', Courier, monospace, 'Liberation Mono', Menlo; line-height: \(codeLineHeight + 3)px; -webkit-text-size-adjust: none; }
-            img {display: block; margin: 0 auto; max-width: \(maxImageWidth)px; }
-            img:not(footer img) { max-width: \(maxImageWidth)px; }
+            img:not(footer img, .attachment) {display: block; margin: 0 auto; max-width: \(maxImageWidth)px; }
+        
+            img.attachment { height: \(fontSize + 5)px; max-width: auto }
             a[href^=\"fsnotes://open/?tag=\"] { background: \(tagColor); }
             p, li, blockquote, dl, ol, ul { line-height: \(lineHeight)px; -webkit-text-size-adjust: none; } \(codeStyle) \(css)
         
@@ -827,8 +878,11 @@ class HandlerOpen: NSObject, WKScriptMessageHandler {
 
         guard let action = message.body as? String else { return }
         let cleanText = action.trim()
-        
-        if cleanText.contains("wkPreview/index.html") || cleanText.contains("MPreview.bundle/index.html") {
+
+        if cleanText.contains("wkPreview/index.html")
+            || cleanText.contains("MPreview.bundle/index.html")
+            || cleanText.contains("MPreview.bundle/#")
+        {
             return
         }
         
@@ -837,5 +891,22 @@ class HandlerOpen: NSObject, WKScriptMessageHandler {
                 NSWorkspace.shared.activateFileViewerSelecting([url])
             }
         #endif
+    }
+}
+
+class HandlerQuickLook: NSObject, WKScriptMessageHandler {
+    func userContentController(_ userContentController: WKUserContentController,
+                               didReceive message: WKScriptMessage) {
+
+        guard let action = message.body as? String else { return }
+        let cleanText = "file://" + action.trim()
+
+        if let url = URL(string: cleanText) {
+            #if os(iOS)
+                UIApplication.getEVC().quickLook(url: url)
+            #else
+                NSWorkspace.shared.activateFileViewerSelecting([url])
+            #endif
+        }
     }
 }

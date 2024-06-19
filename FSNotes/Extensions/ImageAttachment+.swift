@@ -15,29 +15,51 @@ extension NoteAttachment {
 
         let attachment = NSTextAttachment()
 
-        let imageSize = getSize(url: self.url)
-        var size = self.getSize(width: imageSize.width, height: imageSize.height)
+        // Image attachment
 
         if url.isImage {
+            let imageSize = getSize(url: self.url)
+            let size = self.getSize(width: imageSize.width, height: imageSize.height)
             let cell = FSNTextAttachmentCell(textContainer: container, image: NSImage(size: size))
             cell.image?.size = size
             attachment.image = nil
             attachment.attachmentCell = cell
             attachment.bounds = NSRect(x: 0, y: 0, width: size.width, height: size.height)
 
-        } else {
-            size = NSSize(width: 35, height: 35)
-
-            if let image = NSImage(named: "file") {
-                let cell = FSNTextAttachmentCell(textContainer: container, image: image)
-                cell.image?.size = size
-                attachment.image = nil
-                attachment.attachmentCell = cell
-                attachment.bounds = NSRect(x: 0, y: 0, width: size.width, height: size.height)
-            }
+            return attachment
         }
 
-        return attachment
+        // File attachment
+
+        let heigth = UserDefaultsManagement.noteFont.getAttachmentHeight()
+        let text = getImageText()
+        let width = getImageWidth(text: text)
+        let size = NSSize(width: width, height: heigth)
+        let imageSize = NSSize(width: width, height: heigth)
+
+        if let image = imageFromText(text: text, imageSize: imageSize) {
+            let cell = FSNTextAttachmentCell(textContainer: container, image: image)
+            cell.image?.size = size
+            attachment.image = nil
+            attachment.attachmentCell = cell
+            attachment.bounds = NSRect(x: 0, y: 0, width: size.width, height: size.height)
+            return attachment
+        }
+
+        return nil
+    }
+
+    public func getAttachmentImage() -> NSImage? {
+        let heigth = UserDefaultsManagement.noteFont.getAttachmentHeight()
+        let text = getImageText()
+        let width = getImageWidth(text: text)
+        let imageSize = NSSize(width: width, height: heigth)
+
+        if let image = imageFromText(text: text, imageSize: imageSize) {
+            return image
+        }
+
+        return nil
     }
 
     public func getSize(width: CGFloat, height: CGFloat) -> NSSize {
@@ -85,5 +107,48 @@ extension NoteAttachment {
         }
 
         return thumbImage
+    }
+
+    public func getAttachmentFont() -> NSFont {
+        if let font = NSFontManager().font(withFamily: "Avenir Next", traits: NSFontTraitMask(rawValue: NSFontTraitMask.RawValue(NSFontBoldTrait|NSFontItalicTrait)), weight: 1, size: CGFloat(UserDefaultsManagement.fontSize)) {
+            return font
+        }
+
+        return NSFont.systemFont(ofSize: 14.0)
+    }
+
+    public func imageFromText(text: String, imageSize: NSSize) -> NSImage? {
+        let font = getAttachmentFont()
+        
+        let textColor =  UserDataService.instance.isDark ? NSColor.white : NSColor.black
+        let backgroundColor = UserDataService.instance.isDark ? NSColor(red: 0.16, green: 0.17, blue: 0.18, alpha: 1.00) : NSColor.white
+
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .center
+
+        let attributes = [
+            NSAttributedString.Key.font: font,
+            NSAttributedString.Key.foregroundColor: textColor,
+            NSAttributedString.Key.backgroundColor: backgroundColor,
+            NSAttributedString.Key.paragraphStyle: paragraphStyle,
+        ]
+
+        let textSize = text.size(withAttributes: attributes)
+        let imageRect = NSRect(x: 0, y: 0, width: imageSize.width, height: imageSize.height)
+
+        let image = NSImage(size: imageRect.size)
+        image.lockFocus()
+
+        // Fill background color
+        backgroundColor.setFill()
+        imageRect.fill()
+
+        // Draw text
+        let textRect = NSRect(x: (imageSize.width - textSize.width) / 2.0, y: (imageSize.height - textSize.height) / 2.0, width: textSize.width, height: textSize.height)
+        text.draw(in: textRect, withAttributes: attributes)
+
+        image.unlockFocus()
+
+        return image
     }
 }
